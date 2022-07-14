@@ -1,0 +1,14 @@
+.Footer {
+    background: #373737;
+    padding: 60px 0;
+}
+
+.footerBrand {
+    width: 250px;
+}
+
+@media screen and (min-width: 1400px) {
+    .Footer .container {
+        max-width: 1140px;
+    }
+}

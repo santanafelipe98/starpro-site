@@ -1,0 +1,32 @@
+
+.KnowUs {
+    background: #F8F8F8;
+}
+
+.KnowUs .videoPlaceholder {
+    position: relative;
+}
+
+.KnowUs .videoPlaceholder .videoThumb {
+    position: absolute;
+    left: calc(250px - 25px);
+    width: 50px;
+    top: calc(50% - 25px);
+}
+
+.KnowUs .videoPlaceholder img {
+    width: 500px;
+}
+
+.KnowUs .container {
+    padding: 100px 0;
+}
+
+.KnowUs h2 {
+    margin-bottom: 30px;
+}
+
+.KnowUs p {
+    color: #707070;
+    line-height: 1.8;
+}

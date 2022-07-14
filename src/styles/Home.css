@@ -1,0 +1,110 @@
+.Home .theCompany {
+    position: relative;
+    padding-top: 270px;
+    padding-bottom: 50px;
+}
+
+.Home .theCompany .popup {
+    position: absolute;
+    width: 800px;
+    height: 250px;
+    left: calc(50% - 400px);
+    top: -125px;
+    padding: 30px 50px;
+}
+
+.Home .theCompany .popup h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.Home .callToAction {
+    padding: 100px 0;
+}
+
+.Home .callToAction .headingLg:first-child {
+    margin-bottom: 15px;
+}
+
+.Home .aboutUs .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home .aboutUsContainer {
+    width: 950px;
+}
+
+.Home .aboutUsContainer .aboutUsHeader {
+    background: #383838;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.Home .Card {
+    min-height: 450px;
+}
+
+.Home .aboutUsContainer .aboutUsBody {
+    padding: 40px 30px;
+}
+
+.brandQuality:not(:last-child) {
+    border-right: 3px solid #383838;
+}
+
+.brandQuality .brandQualityTitle {
+    text-transform: uppercase;
+    color: #4B4B4B;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.brandQuality .brandQualityInfo {
+    margin-bottom: 15px;
+}
+
+.brandQuality:not(:first-child) {
+    padding-left: 30px;
+}
+
+.brandQuality .brandQualityInfo h3 {
+    color: #14837B;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: .9;
+}
+
+.brandQuality:nth-child(2) .brandQualityInfo {
+    margin-bottom: 22px;
+}
+
+.brandQuality:nth-child(2) .brandQualityInfo h3 {
+    font-size: 1.8rem;
+}
+
+.brandQuality .brandQualityInfo h3 small {
+    font-size: .8rem;
+}
+
+.brandQuality:first-child .brandQualityInfo h3 small {
+    display: inherit;
+    margin-top: -2px;
+}
+
+.brandQuality .brandQualityInfo h3 .bigNumber {
+    font-size: 4rem;
+}
+
+.brandQuality .brandQualityDescription {
+    line-height: 1.3;
+    font-size: .9rem;
+    font-weight: 500;
+}

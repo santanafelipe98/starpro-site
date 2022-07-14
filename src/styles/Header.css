@@ -1,0 +1,50 @@
+.Header {
+    background: #fff;
+    height: 80px;
+}
+
+.Header .brand {
+    position: relative;
+    width: 150px;
+}
+
+.Header .brand img {
+    width: 100%;
+}
+
+
+.Header .btnLogin {
+    margin-left: 20px;
+}
+
+.Header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar .navbarNav {
+    border-bottom: 1px solid #707070;
+}
+
+.navbarNavLink {
+    display: inline-block;
+    padding: 15px 20px;
+    font-weight: bold;
+    color: #696969;
+    transition: color .3s ease;
+}
+
+.navbarNavLink:hover {
+    color: var(--primary-color);
+}
+
+.navbarNavLink.active {
+    color: var(--primary-color);
+}

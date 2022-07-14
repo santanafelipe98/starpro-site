@@ -1,0 +1,71 @@
+
+.MissionVisionValues {
+    padding-bottom: 200px;
+}
+
+.MissionVisionValues .textImage {
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: row;
+}
+
+.MissionVisionValues .textImage .text {
+    padding-top: 50px;
+    padding-bottom: 120px;
+    padding-left: 120px;
+    padding-right: 50px;
+    flex: 1;
+}
+
+.MissionVisionValues .textImage .text p {
+    line-height: 2;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #707070;
+}
+
+.MissionVisionValues .textImage .image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MissionVisionValues .sideDivider {
+    height: 3px;
+    width: 180px;
+    background: #707070;
+}
+
+.MissionVisionValues .textImage .sideDivider {
+    margin-top: 50px;
+    margin-left: -120px;
+}
+
+.MissionVisionValues .textImage .image img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transition: transform .3s ease, filter .3s ease;
+    object-fit: cover;
+}
+
+.MissionVisionValues .textImage .image:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.MissionVisionValues .missionRow {
+    padding: 80px 0;
+}
+
+.MissionVisionValues .missionRow p {
+    line-height: 2.2;
+    font-size: 1.1rem;
+}
+
+.MissionVisionValues ul.values li {
+    margin-left: 20px;
+}

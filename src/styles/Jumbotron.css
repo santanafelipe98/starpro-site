@@ -1,0 +1,17 @@
+.Jumbotron {
+    height: 110vh;
+    min-height: 600px;
+    background: #333;
+}
+
+.Jumbotron .slick-slider {
+    margin-top: 100px;
+}
+
+.slick-slide {
+    width: 700px;
+}
+
+.Jumbotron .container {
+    height: 100%;
+}

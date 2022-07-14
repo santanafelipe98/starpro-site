@@ -1,0 +1,42 @@
+.Button {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btnPrimary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btnSecondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btnMaterial {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.btnXs {
+    font-size: .7rem;
+}
+
+.btnSm {
+    font-size: .9rem;
+}
+
+.btnMd {
+    font-size: 1rem;
+}
+
+.btnLg {
+    font-size: 1.1rem;
+    padding: 15px 25px;
+}
+
+.btnXl {
+    font-size: 1.2rem;
+}

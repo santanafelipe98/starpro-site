@@ -1,0 +1,23 @@
+.OurCustomers {
+    padding: 100px 0;
+}
+
+.OurCustomers .brands {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.OurCustomers .brand {
+    width: 100px;
+}
+
+.OurCustomers .brand:not(:last-child) {
+    margin-right: 50px;
+}
+
+.OurCustomers .brand img {
+    width: 100%;
+}

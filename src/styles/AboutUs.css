@@ -1,0 +1,12 @@
+.AboutUs .PageHeader .pageHeaderText {
+    width: 70%;
+}
+
+.AboutUs .PageHeader .pageHeaderContent .right {
+    position: relative;
+}
+
+.AboutUs .PageHeader .pageHeaderContent .right .Thumbnail {
+    position: absolute;
+    right: -50px;
+}

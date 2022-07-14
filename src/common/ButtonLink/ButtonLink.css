@@ -1,0 +1,40 @@
+.ButtonLink {
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btnPrimary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btnSecondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btnXs {
+    font-size: .7rem;
+}
+
+.btnSm {
+    font-size: .9rem;
+}
+
+.btnMd {
+    font-size: 1rem;
+}
+
+.btnLg {
+    font-size: 1.1rem;
+    padding: 15px 25px;
+}
+
+.btnXl {
+    font-size: 1.2rem;
+    padding: 20px 30px;
+}

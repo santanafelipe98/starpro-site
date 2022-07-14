@@ -1,0 +1,15 @@
+.ContactInfo, .ContactInfo a {
+    color: #fff;
+}
+
+.ContactInfo ul {
+    list-style-type: none;
+}
+
+.ContactInfo ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.ContactInfo ul li .info {
+    margin-left: 10px;
+}

@@ -1,0 +1,32 @@
+.Card {
+    padding: 40px;
+    transition: transform .3s ease;
+}
+
+.Card:hover {
+    transform: translateY(-10px);
+}
+
+.Card .cardTitle {
+    font-size: 1.5rem;
+    color: #4E4E4E;
+}
+
+.Card .cardHeaderTitle {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.Card .cardHeaderIcon {
+    width: 76px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.Card .cardButton {
+    margin-top: 45px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

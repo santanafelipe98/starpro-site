@@ -1,0 +1,4 @@
+.FooterNav {
+    display: flex;
+    flex-direction: column;
+}

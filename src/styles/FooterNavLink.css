@@ -1,0 +1,11 @@
+.FooterNavLink {
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+    transition: border-color .3s ease;
+}
+
+.FooterNavLink.active, .FooterNavLink:hover {
+    border-color: var(--primary-color);
+}
