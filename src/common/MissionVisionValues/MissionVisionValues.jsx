@@ -13,7 +13,7 @@ const MissionVisionValues = props => (
                     Esse é o nosso propósito como empresa, que acredita em todos que fazem parte diretamente ou indiretamente da Starpro. Segurança e Saúde Ambiental começa por aqui!
                 </p>
 
-                <ButtonLink className="mt-3" size="lg">Fale com nossos especialistas</ButtonLink>
+                <ButtonLink to="#contate_nos" hash className="mt-3" size="lg">Fale com nossos especialistas</ButtonLink>
 
                 <div className="sideDivider"></div>
             </div>

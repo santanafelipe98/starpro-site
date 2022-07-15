@@ -39,6 +39,7 @@ a {
 
 .headingLg {
   font-size: 2rem;
+  line-height: 1.5;
 }
 
 .headingMd {
@@ -76,6 +77,9 @@ a {
   color: #fff;
 }
 
+.c-text {
+  color: #707070;
+}
 
 .text-right {
   text-align: right;
@@ -112,6 +116,12 @@ a {
 .bg-primary {
   background: var(--primary-color) !important;
 }
+
+.defaultLeftContentHorizontalPadding {
+  padding-left: 120px;
+  padding-right: 50px;
+}
+
 
 @media screen and (min-width: 1400px) {
   .bootstrap-wrapper .container {

@@ -21,7 +21,10 @@ const Card = props => {
                 { props.children }
             </div>
             <div className="flex flex-row">
-                <ButtonLink className="cardButton">Saiba mais</ButtonLink>
+                <ButtonLink
+                    hash={props.hashLink}
+                    to={props.buttonLink}
+                    className="cardButton">Saiba mais</ButtonLink>
             </div>
         </Container>
     )
@@ -29,6 +32,7 @@ const Card = props => {
 
 Card.propTypes = {
     buttonLink: PropTypes.string,
+    hashLink: PropTypes.bool,
     textStyle: PropTypes.shape({
         color: PropTypes.string,
         fontSize: PropTypes.string,

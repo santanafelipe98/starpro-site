@@ -8,22 +8,44 @@ import ContactUs from '../common/ContactUs/ContactUs'
 import ButtonLink from '../common/ButtonLink/ButtonLink'
 import HalfImageSection from '../common/HalfImageSection/HalfImageSection'
 import Divider from '../common/Divider/Divider'
+import CallToActionBanner from '../common/CallToActionBanner/CallToActionBanner'
+
+import Carousel from '../common/Carousel/Carousel'
 
 
 const PlantSanitation = props => (
     <main className="PlantSanitation">
-        <PageHeader>
-            <div className="pageHeaderContent">
-                <div className="left">
-                    <h1 className="pageHeaderTitle mb-5">Saneamento Vegetal</h1>
-                    <p className="pageHeaderText mt-5 mb-5">
-                        Especialista em eliminação da vegetação indesejada
-                    </p>
+        <PageHeader
+            padding={{
+                top: '120px'
+            }}>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <h1 className="pageHeaderTitle mb-5">Saneamento Vegetal</h1>
+                        <p className="pageHeaderText mt-5 mb-5">
+                            Especialista em eliminação da vegetação indesejada
+                        </p>
 
-                    <ButtonLink className="pageHeaderButton mt-4">Fale com nossos especialistas</ButtonLink>
-                </div>
-                <div className="right">
-                    
+                        <ButtonLink hash to="#contate_nos" className="pageHeaderButton mt-4">Fale com nossos especialistas</ButtonLink>
+                    </div>
+                    <div className="col d-flex justify-content-end">
+                        <Carousel
+                            images={[
+                                {
+                                    src: `${process.env.PUBLIC_URL}/images/cortando_grama_cima.jpg`,
+                                    alt: 'Slide 01'
+                                },
+                                {
+                                    src: `${process.env.PUBLIC_URL}/images/cortando_grama.jpg`,
+                                    alt: 'Slide 02'
+                                },
+                                {
+                                    src: `${process.env.PUBLIC_URL}/images/cortando_grama_close.jpg`,
+                                    alt: 'Slide 03'
+                                }
+                            ]} />
+                    </div>
                 </div>
             </div>
         </PageHeader>
@@ -39,7 +61,7 @@ const PlantSanitation = props => (
                     Eliminação da vegetação indesejada através de poda, capina mecanizada ou química com uso de herbicidas. Indicado para jardins, pátios, pavimentos diversos e qualquer ambiente onde exista necessidade.
                 </p>
 
-                <ButtonLink className="mt-4">Fale com nossos especialistas</ ButtonLink>
+                <ButtonLink hash to="#contate_nos" className="mt-4">Fale com nossos especialistas</ ButtonLink>
             </div>
         </HalfImageSection>
         <section className="license">
@@ -54,7 +76,7 @@ const PlantSanitation = props => (
                 <Divider className="mb-5" />
 
                 <div className="d-flex justify-content-center mt-4">
-                    <ButtonLink>Fale com nossos especialistas</ButtonLink>
+                    <ButtonLink hash to="#contate_nos">Fale com nossos especialistas</ButtonLink>
                 </div>
 
             </div>
@@ -62,6 +84,12 @@ const PlantSanitation = props => (
         <InternationalCertification />
         <KnowUs />
         <ContactUs />
+        <CallToActionBanner>
+            <h1 className="headingLg text-uppercase text-weight-light mb-3">
+                Tratamento térmico é com a Starpro
+            </h1>
+            <h2 className="headingMd">Estamos prontos para lhe atender</h2>
+        </CallToActionBanner>
     </main>
 )
 

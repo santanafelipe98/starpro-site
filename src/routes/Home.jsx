@@ -49,7 +49,8 @@ const Home = props => {
                         <div className="col-md-6">
                             <Card
                                 className="mr-4"
-                                title="A StarPro está presente em toda a Bahia…">
+                                title="A StarPro está presente em toda a Bahia…"
+                                buttonLink="a-starpro">
                                 <article>
                                     <p>
                                         Uma empresa <span className="c-primary">líder de mercado, reconhecida pelo seu alto padrão de qualidade</span>. Estamos presentes em mais de 7 cidades e em toda Região Metropolitana de Salvador fornecendo serviço de qualidade e responsabilidade para todos.
@@ -60,6 +61,8 @@ const Home = props => {
                         <div className="col-md-6">
                             <Card
                                 className="ml-4 bg-dark"
+                                buttonLink="#certificados"
+                                hashLink
                                 textStyle={{
                                     color: '#fff'
                                 }}>
@@ -154,7 +157,7 @@ const Home = props => {
                     </div>
                 </Container>
             </Section>
-            <InternationalCertification />
+            <InternationalCertification id="certificados" />
             <KnowUs />
             <ServiceQuality />
             <OurCustomers />
@@ -167,7 +170,7 @@ const Home = props => {
                             <h2 className="headingLg">Estamos prontos para lhe atender</h2>
                         </div>
                         <div className="col-md-6 flex row align-items-center">
-                            <ButtonLink size="lg">Fale com nossos especialistas</ButtonLink>
+                            <ButtonLink to="#contate_nos" hash size="lg">Fale com nossos especialistas</ButtonLink>
                         </div>
                     </div>
                     

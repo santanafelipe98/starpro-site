@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 
 import './ButtonLink.css'
 
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+
 const ButtonLink = props => {
     const className = useMemo(() => {
         let classes = `${props.className || ''} ButtonLink`
@@ -33,16 +36,21 @@ const ButtonLink = props => {
         return classes
     }, [props.variant, props.className, props.size])
 
-    return (
-        <a href={props.to} className={className}>
-            { props.children }
-        </a>
-    )
+    if (props.hash) {
+        return (
+            <HashLink to={props.to} className={className} smooth>{ props.children }</HashLink>
+        )
+    } else {
+        return (
+            <Link to={props.to} className={className}>{ props.children }</Link>
+        )
+    }
 }
 
 ButtonLink.propTypes = {
     to: PropTypes.string.isRequired,
-    variant: PropTypes.oneOf([ 'primary', 'secondary' ])
+    variant: PropTypes.oneOf([ 'primary', 'secondary' ]),
+    hash: PropTypes.bool
 }
 
 ButtonLink.defaultProps = {

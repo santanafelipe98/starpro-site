@@ -10,6 +10,7 @@ import Template from './template/Main'
 import Home from './routes/Home'
 import AboutUs from './routes/AboutUs'
 import PlantSanitation from './routes/PlantSanitation'
+import WaterTankCleaning from './routes/WaterTankCleaning'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="a-starpro" element={<AboutUs />} />
             <Route path="servicos">
               <Route path="saneamento-vegetal" element={ <PlantSanitation /> } />
+              <Route path="limpeza-e-desinfeccao-de-caixa-dagua" element={ <WaterTankCleaning /> } />
             </Route>
           </Routes>
         </Template>

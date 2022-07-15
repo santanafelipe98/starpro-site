@@ -2,7 +2,7 @@ import React from 'react'
 import './InternationalCertification.css'
 
 const InternationalCertification = props => (
-    <section className="InternationalCertification">
+    <section {...props} className="InternationalCertification">
         <div className="container">
             <div className="row">
                 <div className="col-md-6 bg-primary left">

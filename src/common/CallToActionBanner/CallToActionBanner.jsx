@@ -16,7 +16,7 @@ const CallToActionBanner = props => {
                         { props.children }
                     </div>
                     <div className={`${cols[1]} d-flex align-items-center`}>
-                        <ButtonLink size="xl">Fale com nossos especialistas</ButtonLink>
+                        <ButtonLink to="#contate_nos" hash size="xl">Fale com nossos especialistas</ButtonLink>
                     </div>
                 </div>
             </div>

@@ -58,7 +58,7 @@ const ServiceQuality = props => {
                 </div>
                 <div className="row">
                     <div className="container d-flex justify-content-center">
-                        <ButtonLink className="btnLink" size="lg">
+                        <ButtonLink to="#contate_nos" hash className="btnLink" size="lg">
                             Fale com nossos especialistas
                         </ButtonLink>
                     </div>

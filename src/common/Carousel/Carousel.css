@@ -1,20 +1,54 @@
-.Carousel .slick-thumb {
-    width: 120px;
-    height: 80px;
+
+.Carousel {
+    width: 500px;
+    position: relative;
+}
+
+.Carousel .display {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 300px;
     border-radius: 10px;
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    margin-bottom: 40px;
 }
 
-.Carousel .slick-slide img {
-    width:500px;
+.Carousel .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
 }
 
-.Carousel .slick-thumb {
+.Carousel .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.Carousel .thumbs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Carousel .thumb {
+    width: 150px;
+    height: 99px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Carousel .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.Carousel .thumb:hover img {
+    transform: scale(1.1);
 }

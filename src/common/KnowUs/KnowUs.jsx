@@ -18,7 +18,7 @@ const KnowUs = props => (
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
                     </p>
 
-                    <ButtonLink className="mt-5" variant="primary">
+                    <ButtonLink to="#contate_nos" hash className="mt-5" variant="primary">
                         Fale com nossos especialistas
                     </ButtonLink>
                 </div>

@@ -23,7 +23,7 @@ const AboutUs = props => (
                         A Starpro é reconhecida no mercado pelo seu alto padrão de qualidade.
                     </p>
 
-                    <ButtonLink className="pageHeaderButton mt-4">Fale com nossos especialistas</ButtonLink>
+                    <ButtonLink to="#contate_nos" hash className="pageHeaderButton mt-4">Fale com nossos especialistas</ButtonLink>
                 </div>
                 <div className="right">
                     <Thumbnail

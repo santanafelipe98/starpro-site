@@ -3,6 +3,7 @@ import '../../styles/Header.css'
 import Button from '../../common/Button/Button'
 
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 const Header = props => (
     <header className="Header">
@@ -16,7 +17,7 @@ const Header = props => (
                     <Link to="#" className="navbarNavLink">Segmentos</Link>
                     <Link to="#" className="navbarNavLink">Serviços</Link>
                     <Link to="/a-starpro" className="navbarNavLink">A Starpro</Link>
-                    <Link to="#" className="navbarNavLink">Contato</Link>
+                    <HashLink to="#contate_nos" smooth className="navbarNavLink">Contato</HashLink>
                 </nav>
                 <Button className="btnLogin">Área do cliente</Button>
             </div>

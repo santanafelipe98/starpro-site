@@ -35,7 +35,7 @@ const Jumbotron = props => {
                         <p className="textLg text-weight-light">Uma empresa líder de mercado, especializada na prestação de serviços em Controle de Pragas Urbana, Higienização de Caixa D'água, Sanitização de Ambientes e Saneamento Vegetal</p>
                     </div>
                 </Slider>
-                <ButtonLink size="xl">Fale com nossos especialistas</ButtonLink>
+                <ButtonLink to="#contate_nos" hash size="xl">Fale com nossos especialistas</ButtonLink>
             </div>
         </section>
     )

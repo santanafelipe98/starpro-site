@@ -10,7 +10,7 @@ const ContactUs = props => {
     }), [])
 
     return (
-        <section className="ContactUs">
+        <section id="contate_nos" className="ContactUs">
             <div style={styles} className="container">
                 <div className="row">
                     <div className="col-md-7"></div>
