@@ -13,6 +13,7 @@ import PhytossanitaryTreatment from './routes/PhytossanitaryTreatment'
 import UrbanPestControl from './routes/UrbanPestControl'
 import PlantSanitation from './routes/PlantSanitation'
 import WaterTankCleaning from './routes/WaterTankCleaning'
+import SanitizationOfEnviroments from './routes/SanitizationOfEnviroments'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="servicos">
               <Route path="tratamento-fitossanitario" element={ <PhytossanitaryTreatment /> } />
               <Route path="controle-de-pragas-urbanas" element={ <UrbanPestControl /> }/>
+              <Route path="sanitizacao-de-ambientes" element={<SanitizationOfEnviroments />} />
               <Route path="saneamento-vegetal" element={ <PlantSanitation /> } />
               <Route path="limpeza-e-desinfeccao-de-caixa-dagua" element={ <WaterTankCleaning /> } />
             </Route>

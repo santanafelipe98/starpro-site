@@ -1,0 +1,15 @@
+.Icon {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Icon .iconImage {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.Icon .iconDescription {
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.1rem;
+}

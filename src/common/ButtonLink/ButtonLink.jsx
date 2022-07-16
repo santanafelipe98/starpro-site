@@ -52,7 +52,7 @@ const ButtonLink = props => {
 
 ButtonLink.propTypes = {
     to: PropTypes.string.isRequired,
-    variant: PropTypes.oneOf([ 'primary', 'secondary' ]),
+    variant: PropTypes.oneOf([ 'primary', 'secondary', 'light' ]),
     hash: PropTypes.bool
 }
 
