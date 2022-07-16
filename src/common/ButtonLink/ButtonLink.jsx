@@ -17,6 +17,9 @@ const ButtonLink = props => {
             case 'secondary':
                 classes += ' btnSecondary'
                 break
+            case 'light':
+                classes += ' btnLight'
+                break
         }
 
         switch (props.size) {

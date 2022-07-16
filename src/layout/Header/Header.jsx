@@ -45,7 +45,7 @@ const Header = props => {
                                 },
                                 {
                                     title: 'Controle de Pragas Urbanas',
-                                    url: 'servicos/controle-de-pragas'
+                                    url: 'servicos/controle-de-pragas-urbanas'
                                 },
                                 {
                                     title: 'Limpeza e Desinfecção de Caixa D\'água',

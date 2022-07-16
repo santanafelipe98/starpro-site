@@ -32,6 +32,10 @@
     align-items: center;
 }
 
+.HalfImageSection .image.flipX {
+    transform: scaleX(-1);
+}
+
 .HalfImageSection .image.blackWhite img {
     transition: transform .3s ease, filter .3s ease;
     filter: grayscale(1);

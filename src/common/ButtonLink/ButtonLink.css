@@ -17,6 +17,11 @@
     color: #fff;
 }
 
+.btnLight {
+    background: white;
+    color: var(--primary-color);
+}
+
 .btnXs {
     font-size: .7rem;
 }

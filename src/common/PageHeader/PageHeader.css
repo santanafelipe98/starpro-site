@@ -1,6 +1,5 @@
 .PageHeader {
-    height: 100vh;
-    min-height: 600px;
+    min-height: 100vh;
     overflow: hidden;
 }
 

@@ -4,7 +4,7 @@ import './InternationalCertification.css'
 const InternationalCertification = props => (
     <section {...props} className="InternationalCertification">
         <div className="container">
-            <div className="row">
+            <div className="row textRow">
                 <div className="col-md-6 bg-primary left">
                     <h2 className="headingLg c-white text-right mb-3">Certificações internacionais</h2>
                     <p className="textMd c-white text-right">
