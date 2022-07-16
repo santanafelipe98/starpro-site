@@ -1,0 +1,12 @@
+
+.NavbarNav {
+    border-bottom: 1px solid #707070;
+}
+
+.NavbarNav ul.navItems  {
+    list-style-type: none;
+}
+
+.NavbarNav ul.navItems li {
+    display: inline-block;
+}

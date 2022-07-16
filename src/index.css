@@ -76,6 +76,9 @@ a {
 .c-white {
   color: #fff;
 }
+.c-dark {
+  color: #4B4B4B;
+}
 
 .c-text {
   color: #707070;
@@ -122,6 +125,10 @@ a {
   padding-right: 50px;
 }
 
+.leftSideDivider {
+  width: 250px;
+  margin-left: -120px;
+}
 
 @media screen and (min-width: 1400px) {
   .bootstrap-wrapper .container {

@@ -9,6 +9,7 @@ import {
 import Template from './template/Main'
 import Home from './routes/Home'
 import AboutUs from './routes/AboutUs'
+import PhytossanitaryTreatment from './routes/PhytossanitaryTreatment'
 import PlantSanitation from './routes/PlantSanitation'
 import WaterTankCleaning from './routes/WaterTankCleaning'
 
@@ -21,6 +22,7 @@ function App() {
             <Route index path="/" element={<Home />} />
             <Route path="a-starpro" element={<AboutUs />} />
             <Route path="servicos">
+              <Route path="tratamento-fitossanitario" element={ <PhytossanitaryTreatment /> } />
               <Route path="saneamento-vegetal" element={ <PlantSanitation /> } />
               <Route path="limpeza-e-desinfeccao-de-caixa-dagua" element={ <WaterTankCleaning /> } />
             </Route>

@@ -1,0 +1,46 @@
+.NavItem {
+    display: inline-block;
+    position: relative;
+}
+
+.NavItem .navLink {
+    padding: 15px 20px;
+    transition: color .3s ease;
+    display: inline-block;
+    font-weight: bold;
+    color: #696969;
+}
+
+.NavItem:hover .navLink {
+    color: #696969;
+}
+
+.NavItem.active .navLink {
+    color: var(--primary-color);
+}
+
+.NavItem .dropdownMenu {
+    list-style: none;
+    display: none;
+    top: 50px;
+    min-width: 300px;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    z-index: 100;
+}
+
+.NavItem:hover .dropdownMenu {
+    display: block;
+}
+
+.dropdownMenu .NavItem {
+    display: block !important;
+}
+
+.dropdownMenu .NavItem:hover .navLink {
+    background: var(--primary-color);
+    color: #fff;
+    display: block;
+    width: 100%;
+}

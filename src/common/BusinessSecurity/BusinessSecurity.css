@@ -1,0 +1,12 @@
+.BusinessSecurity {
+    padding: 130px 150px;
+}
+.BusinessSecurity h1.headingXl {
+    font-size: 3rem;
+}
+
+.BusinessSecurity .places {
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+}
