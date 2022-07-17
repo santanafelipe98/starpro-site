@@ -1,10 +1,12 @@
 import React from 'react'
 import '../../styles/Header.css'
-import Button from '../../common/Button/Button'
+import ButtonLink from '../../common/ButtonLink/ButtonLink'
 
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import NavItem from './NavItem'
+import ContactLinks from '../../common/ContactLinks/ContactLinks'
+
 import { useLocation } from 'react-router-dom'
 
 /*
@@ -64,7 +66,8 @@ const Header = props => {
                             title="A Starpro"
                             url="a-starpro" />
                     </Navbar>
-                    <Button className="btnLogin">Área do cliente</Button>
+                    <ButtonLink className="btnLogin mr-4">Área do cliente</ButtonLink>
+                    <ContactLinks />
                 </div>
             </div>
         </header>

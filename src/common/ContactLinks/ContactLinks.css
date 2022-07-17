@@ -1,0 +1,30 @@
+.ContactLinks {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ContactLinks li {
+    display: inline-block;
+}
+.ContactLinks li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.ContactLinks li .contactLink {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.ContactLinks li .contactLink img {
+    width: 100%;
+}
+
+.ContactLinks li .contactLink.svgIcon {
+    background: #333;
+}
