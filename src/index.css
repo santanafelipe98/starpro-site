@@ -61,6 +61,10 @@ a {
   line-height: 2;
 }
 
+.hidden {
+  display: none;
+}
+
 .textSm {
   font-size: .9rem;
   line-height: 2;
