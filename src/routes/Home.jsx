@@ -90,6 +90,7 @@ const Home = props => {
                 </div>
             </section>
             <Section
+                id="nossos_servicos"
                 title="Nossos serviços">
                 <Slider
                     className="mt-5"

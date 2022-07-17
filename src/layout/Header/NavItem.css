@@ -15,8 +15,14 @@
     color: #696969;
 }
 
-.NavItem.active .navLink {
+.NavItem.active > .navLink {
     color: var(--primary-color);
+}
+
+.NavItem .NavItem.active > .navLink {
+    color: #fff;
+    background: var(--primary-color);
+    display: block;
 }
 
 .NavItem .dropdownMenu {

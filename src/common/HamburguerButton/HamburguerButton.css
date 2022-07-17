@@ -1,0 +1,43 @@
+.HamburguerButton {
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    display: none;
+}
+
+.HamburguerButton.change {
+    margin-top: 3px;
+}
+
+.bar {
+    width: 24px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-5px, 3px) ;
+    transform: rotate(-45deg) translate(-5px, 3px) ;
+}
+  
+.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.change .bar:nth-child(3){
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+@media screen and (max-width: 1199.8px) {
+    .HamburguerButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+}

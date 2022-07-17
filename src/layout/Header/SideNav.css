@@ -1,0 +1,53 @@
+.SideNav {
+    top: 80px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: rgba(0, 0, 0, .5);
+    z-index: 999;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .2s ease;
+    overflow: hidden;
+}
+
+.SideNav.open {
+    display: flex;
+    justify-content: flex-end;
+    visibility: visible;
+    opacity: 1;
+}
+
+.SideNav .sideMenu {
+    width: 300px;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    transform: translateX(300px);
+    transition: transform .3s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.SideNav.open .sideMenu {
+    transform: translateX(0);
+}
+
+.SideNav .sideMenu .menuItems {
+    list-style-type: none;
+}
+
+.SideNav .sideMenu .menuItems .menuItem > .menuLink {
+    display: block;
+    padding: 15px 20px;
+    transition: color .3s ease;
+    display: block;
+    font-weight: bold;
+    color: #696969;
+}
+.SideNav .sideMenu .menuItems .menuItem:hover > .menuLink {
+    color: #fff;
+    background: var(--primary-color);
+}

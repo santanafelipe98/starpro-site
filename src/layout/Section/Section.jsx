@@ -5,6 +5,7 @@ import '../../styles/Section.css'
 
 const Section = props => (
     <section
+        {...props}
         className={ `${props.className || ''} Section` }>
         <div className="sectionHeader d-flex flex-column align-items-center">
             <h2 className="sectionTitle mb-4">{props.title}</h2>

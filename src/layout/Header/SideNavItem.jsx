@@ -1,14 +1,22 @@
-import React, { useCallback, useMemo } from 'react'
+import React, { useCallback, useState, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
-import './NavItem.css'
+import './SideNavItem.css'
 
-const NavItem = props => {
+const SideNavItem = props => {
     const items = useMemo(() => props.items || [], [props.items])
+    const [ open, setOpen ] = useState(false)
+
+    const handleClick = useCallback((e) => {
+        setOpen(val => !val)
+
+        if (props.onClick && items.length === 0)
+            props.onClick(e)
+    }, [setOpen, props.onClick, items])
 
     const renderLink = useCallback(() => {
         if (props.hash) {
@@ -19,8 +27,8 @@ const NavItem = props => {
                         items.length > 0 &&
                         (
                             <FontAwesomeIcon
-                                className="ml-2"
-                                icon={faCaretDown}
+                                className="caret"
+                                icon={open ? faCaretDown : faCaretRight}
                                 size="sm"
                                 color="var(--primary-color)" />
                         )
@@ -36,24 +44,26 @@ const NavItem = props => {
                     items.length > 0 &&
                     (
                         <FontAwesomeIcon
-                            className="ml-2"
-                            icon={faCaretDown}
+                            className="caret"
+                            icon={open ? faCaretDown : faCaretRight}
                             size="sm"
                             color="var(--primary-color)" />
                     )
                 }
             </Link>
         )
-    }, [props.hash, props.title, props.url, items])
+    }, [props.hash, props.url, props.title, open, items])
 
     return (
-        <li className={`NavItem ${props.active ? 'active' : ''}`}>
+        <li
+            onClick={handleClick}
+            className={`SideNavItem ${props.active ? 'active' : ''} ${open && items.length > 0 ? 'open' : ''}`}>
             { renderLink() }
             {
                 items.length > 0 &&
                 (
                     <ul className="dropdownMenu">
-                        { items.map((item, i) => <NavItem active={props.activeIndex === i} key={`${item.title}${i}`} {...item} />) }
+                        { items.map((item, i) => <SideNavItem onClick={props.onClick} active={props.activeIndex === i} key={`${item.title}${i}`} {...item} />) }
                     </ul>
                 )
             }
@@ -61,7 +71,7 @@ const NavItem = props => {
     )
 }
 
-NavItem.propTypes = {
+SideNavItem.propTypes = {
     url: PropTypes.string,
     title: PropTypes.string,
     active: PropTypes.bool,
@@ -71,8 +81,9 @@ NavItem.propTypes = {
         title: PropTypes.string
     })),
     hash: PropTypes.bool,
+    onClick: PropTypes.func
 }
 
 
 
-export default NavItem
+export default SideNavItem

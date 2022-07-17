@@ -4,7 +4,7 @@ import Footer from '../layout/Footer/Footer'
 
 const Main = props => (
     <div className="Main">
-        <Header />
+        <Header fixed />
         <main>
             { props.children }
         </main>

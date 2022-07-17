@@ -3,7 +3,7 @@ import './Navbar.css'
 
 
 const Navbar = props => (
-    <nav className="NavbarNav">
+    <nav {...props} className="NavbarNav">
         <ul className="navItems">
             { props.children } 
         </ul>
