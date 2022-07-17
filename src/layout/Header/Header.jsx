@@ -9,19 +9,8 @@ import ContactLinks from '../../common/ContactLinks/ContactLinks'
 
 import { useLocation } from 'react-router-dom'
 
-/*
-<nav className="navbarNav">
-                    <Link to="/" className="navbarNavLink active">Home</Link>
-                    <Link to="#" className="navbarNavLink">Segmentos</Link>
-                    <Link to="#" className="navbarNavLink">Serviços</Link>
-                    <Link to="/a-starpro" className="navbarNavLink">A Starpro</Link>
-                    <HashLink to="#contate_nos" smooth className="navbarNavLink">Contato</HashLink>
-                </nav>
-*/
-
 const Header = props => {
     const location = useLocation()
-    console.log()
 
     return (
         <header className="Header">
@@ -65,6 +54,10 @@ const Header = props => {
                         <NavItem
                             title="A Starpro"
                             url="a-starpro" />
+                        <NavItem
+                            title="Contato"
+                            url="#contate_nos"
+                            hash />
                     </Navbar>
                     <ButtonLink className="btnLogin mr-4">Área do cliente</ButtonLink>
                     <ContactLinks />
