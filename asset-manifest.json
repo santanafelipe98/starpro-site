@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/starpro-site/static/css/main.72419215.css",
-    "main.js": "/starpro-site/static/js/main.9f4016db.js",
+    "main.css": "/starpro-site/static/css/main.7b8857f6.css",
+    "main.js": "/starpro-site/static/js/main.bb2a5270.js",
     "static/js/787.508dbd56.chunk.js": "/starpro-site/static/js/787.508dbd56.chunk.js",
     "static/media/slick.svg": "/starpro-site/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/starpro-site/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/starpro-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/starpro-site/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/starpro-site/index.html",
-    "main.72419215.css.map": "/starpro-site/static/css/main.72419215.css.map",
-    "main.9f4016db.js.map": "/starpro-site/static/js/main.9f4016db.js.map",
+    "main.7b8857f6.css.map": "/starpro-site/static/css/main.7b8857f6.css.map",
+    "main.bb2a5270.js.map": "/starpro-site/static/js/main.bb2a5270.js.map",
     "787.508dbd56.chunk.js.map": "/starpro-site/static/js/787.508dbd56.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72419215.css",
-    "static/js/main.9f4016db.js"
+    "static/css/main.7b8857f6.css",
+    "static/js/main.bb2a5270.js"
   ]
 }
