@@ -3,11 +3,17 @@
 }
 
 .ServiceQuality .left {
-    padding: 50px 100px;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .ServiceQuality .right {
-    padding: 50px 0;
+    padding: 100px 0;
+    position: relative;
 }
 
 .testimonial {
@@ -16,19 +22,107 @@
     font-weight: 500;
     font-size: 1.5rem;
     color: #707070;
+    padding: 0 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonial .author {
     margin-top: 30px;
 }
 
-.ServiceQuality .left .headingLg {
+.ServiceQuality .left .headingXl {
     line-height: 1.4;
     text-transform: uppercase;
 }
 
+
+@media screen and (min-width: 576px) {
+    .ServiceQuality .container {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ServiceQuality .container {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ServiceQuality .container {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ServiceQuality .container {
+        max-width: 100% !important;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     .ServiceQuality .container {
-        max-width: 100%;
+        max-width: 100% !important;
+    }
+
+    .ServiceQuality .left .headingXl, .ServiceQuality .right .testimonialSlider {
+        width: 640px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .ServiceQuality .left .headingXl {
+        font-size: 2.2vw;
+    }
+
+    .ServiceQuality .left .textLg {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 991.8px)  {
+    .ServiceQuality .left {
+        justify-content: center;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .ServiceQuality .left .textLg {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .ServiceQuality .right {
+        padding: 50px 0;
+        padding-bottom: 0;
+    }
+
+    .testimonial {
+        padding: 0 20px;
+    }
+
+    .ServiceQuality .btnLink {
+        margin-top: 50px;
+    }
+
+    .testimonial .textXX {
+        font-size: 18px !important;
+    }
+
+    .ServiceQuality .left .headingXl {
+        font-size: 24px;
+        margin-bottom: 30px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ServiceQuality .left .headingXl {
+        font-size: 18px;
     }
 }

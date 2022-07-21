@@ -30,6 +30,7 @@ const Carousel = props => {
 
         return (
             <div
+                key={`slide${i}`}
                 style={styles}
                 className="slide"
                 onMouseOut={ () => setMouseOver(false) }
@@ -48,12 +49,12 @@ const Carousel = props => {
     const images = props.images || []
 
     return (
-        <div className="Carousel">
+        <div className={`${props.className || ''} Carousel`}>
             <div className="display">
                 { images.map(renderSlide) }
             </div>
             <div className="thumbs">
-                { images.map(renderThumb) }
+                { images.slice(0, 3).map(renderThumb) }
             </div>
         </div>
     )

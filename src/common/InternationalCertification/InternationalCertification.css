@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+.InternationalCertification .left {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .InternationalCertification .left, .InternationalCertification .right {
     padding: 50px 60px;
 }
@@ -34,8 +39,117 @@
     margin-right: 100px;
 }
 
+.InternationalCertification .right {
+    position: relative;
+}
+
+@media screen and (min-width: 576px) {
+    .InternationalCertification .container {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .InternationalCertification .container {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .InternationalCertification .container {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .InternationalCertification .container {
+        max-width: 100% !important;
+    }
+}
+
+
 @media screen and (min-width: 1400px) {
     .InternationalCertification .container {
-        max-width: 100%;
+        max-width: 100% !important;
+    }
+
+    .InternationalCertification .left .wrapper, .InternationalCertification .right .wrapper {
+        width: 640px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .InternationalCertification .left .headingXl {
+        font-size: 2.4vw;
+    }
+
+    .InternationalCertification .left .textXl {
+        font-size: 1.3vw;
+    }
+
+    .InternationalCertification .right .headingLg {
+        font-size: 1.9vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .certifications .certificationImage {
+        width: 100px;
+    }
+
+    .certifications {
+        padding: 50px 0;
+    }
+
+    .InternationalCertification .left p,
+    .InternationalCertification .right p,
+    .InternationalCertification .left h2 {
+        text-align: center;
+    }
+
+    .InternationalCertification .left {
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .InternationalCertification .left .textXl {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .certifications .container {
+        flex-wrap: wrap;
+    }
+
+    .certifications .certificationImage {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+
+    .certifications .certificationImage:not(:last-child) {
+        margin-right: 20px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    
+    .InternationalCertification .left, .InternationalCertification .right {
+        padding: 50px 20px;
+    }
+    
+    .certifications {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .certifications .certificationImage {
+        width: 60px;
+    }
+
+    .certifications {
+        padding: 10px 0;
     }
 }

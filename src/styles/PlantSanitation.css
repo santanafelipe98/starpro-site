@@ -7,11 +7,39 @@
     color: #707070;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .PlantSanitation .halfSectionHeader .headingLg {
+        font-size: 2vw !important;
+    }
 
-.PlantSanitation .license {
-    color: #4B4B4B;
+    .PlantSanitation .HalfImageSection .headingLg {
+        font-size: 1.8vw !important;
+    }
+
+    .PlantSanitation .HalfImageSection .textXl {
+        font-size: 1.2vw !important;
+    }
 }
 
-.PlantSanitation .license .container {
-    padding: 120px 11%;
+
+@media screen and (min-width: 1400px) {
+    .PlantSanitation .PageHeader .pageHeaderText,
+    .PlantSanitation .HalfImageSection .headingLg,
+    .PlantSanitation .HalfImageSection .headingMd,
+    .PlantSanitation .HalfImageSection .textXl,
+    .PlantSanitation .defaultLeftContentHorizontalPadding .btnDiv {
+        width: 640px;
+    }
+
+    .PlantSanitation .defaultLeftContentHorizontalPadding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .PlantSanitation .pageHeaderText {
+        width: auto;
+    }
 }

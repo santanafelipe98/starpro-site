@@ -21,3 +21,54 @@
 .OurCustomers .brand img {
     width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+    .OurCustomers .brand {
+        width: 80px;
+    }
+
+    .OurCustomers .headingXl {
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .OurCustomers .heading {
+        flex-direction: column !important;
+    }
+
+    .OurCustomers .brands {
+        margin-top: 50px;
+    }
+
+    .OurCustomers .headingXl {
+        font-size: 34px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .OurCustomers .brands {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .OurCustomers .brand {
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .OurCustomers .brand img {
+        width: auto;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .OurCustomers {
+        padding: 50px 0;
+    }
+}

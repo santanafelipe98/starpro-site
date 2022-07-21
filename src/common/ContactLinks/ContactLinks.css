@@ -21,6 +21,10 @@
     position: relative;
 }
 
+.ContactLinks li.whatsapp {
+    margin-top: 5px;
+}
+
 .ContactLinks li .contactLink img {
     width: 100%;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 import './BusinessSecurity.css'
 import Divider from '../Divider/Divider'
-import ButtonLink from '../ButtonLink/ButtonLink'
+import TalkWithUsButton from '../TalkWithUsButton/TalkWithUsButton'
 
 import places from '../../data/places'
 import { useCallback } from 'react'
@@ -17,7 +17,7 @@ const BusinessSecurity = props => {
     return (
         <section className="BusinessSecurity d-flex flex-col align-items-center">
             <h1 className="headingXl c-dark text-center mb-5">
-                Segurança para o comércio internacional:<br /> sua madeira livre de pragas
+                Segurança para o comércio internacional: sua madeira livre de pragas
             </h1>
             <Divider className="mb-5 bg-primary" style={ { width: '250px', height: '5px' } } />
 
@@ -25,7 +25,7 @@ const BusinessSecurity = props => {
                 { places.map(renderPlace) }
             </div>
 
-            <ButtonLink className="mt-5 mb-5" to="#contate_nos" hash>Fale com nossos especialistas</ButtonLink>
+            <TalkWithUsButton className="mt-5 mb-5">Fale com nossos especialistas</TalkWithUsButton>
 
             <Divider className="mt-5 px-5" style={{ width: '70%' }} />
         </section>

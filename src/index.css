@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
 
 :root {
   --primary-color: #14837B;
@@ -10,6 +11,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body, html { 
@@ -30,34 +35,42 @@ a {
 }
 
 .headingXX {
-  font-size: 3.3rem;
+  font-size: 52.8px;
 }
 
 .headingXl {
-  font-size: 2.3rem;
+  font-size: 36.8px;
 }
 
 .headingLg {
-  font-size: 2rem;
+  font-size: 32px;
   line-height: 1.5;
 }
 
 .headingMd {
-  font-size: 1.7rem;
+  font-size: 27.2px;
+}
+
+.headingSm {
+  font-size: 19.2px;
+}
+
+.textXX {
+  font-size: 24px;
 }
 
 .textXl {
-  font-size: 1.3rem;
+  font-size: 20.8px;
   line-height: 2;
 }
 
 .textLg {
-  font-size: 1.1rem;
+  font-size: 17.6px;
   line-height: 2;
 }
 
 .textMd {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 2;
 }
 
@@ -66,12 +79,12 @@ a {
 }
 
 .textSm {
-  font-size: .9rem;
+  font-size: 14.4px;
   line-height: 2;
 }
 
 .headingLg {
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 .c-primary {
@@ -138,4 +151,66 @@ a {
   .bootstrap-wrapper .container {
       max-width: 1320px;
   }
+}
+
+@media screen and (max-width: 992px) {
+  .defaultLeftContentHorizontalPadding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headingXX {
+    font-size: 48px;
+  }
+  
+  .headingXl {
+    font-size: 32px;
+  }
+  
+  .headingLg {
+    font-size: 28.8px;
+    line-height: 1.4;
+  }
+  
+  .headingMd {
+    font-size: 24px;
+  }
+  
+  .headingSm {
+    font-size: 17.6px;
+  }
+
+  .textXl {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .textXX {
+    font-size: 20.8px;
+  }
+
+  .headingXX {
+    font-size: 43.2px;
+  }
+  
+  .headingXl {
+    font-size: 28.8px;
+  }
+  
+  .headingLg {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  
+  .headingMd {
+    font-size: 20.8px;
+  }
+
+  .headingSm {
+    font-size: 16px;
+  }
+
 }

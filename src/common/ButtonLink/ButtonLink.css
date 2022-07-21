@@ -7,6 +7,10 @@
     cursor: pointer;
 }
 
+.ButtonLink.rounded {
+    border-radius: 8px !important;
+}
+
 .btnPrimary {
     background: var(--primary-color);
     color: #fff;

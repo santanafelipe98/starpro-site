@@ -2,11 +2,92 @@
     padding: 130px 150px;
 }
 .BusinessSecurity h1.headingXl {
-    font-size: 3rem;
+    font-size: 48px;
+    width: 1000px;
 }
 
 .BusinessSecurity .places {
     display: flex;
     justify-content: space-between;
     min-height: 200px;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .BusinessSecurity h1.headingXl {
+        font-size: 43px;
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .BusinessSecurity h1.headingXl {
+        font-size: 37px;
+        width: 100%;
+    }
+
+    .BusinessSecurity {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .BusinessSecurity .places {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .BusinessSecurity {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .BusinessSecurity h1.headingXl {
+        font-size: 32px;
+    }
+
+    .BusinessSecurity .places .TextIcon {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .BusinessSecurity {
+        padding: 50px 20px;
+    }
+
+    .BusinessSecurity .ButtonLink {
+        margin-top: 20px !important;
+    }
+
+    .BusinessSecurity h1.headingXl {
+        font-size: 28.8px;
+    }
+
+    .BusinessSecurity .places {
+        justify-content: center;
+    }
+
+    .BusinessSecurity .places:not(:last-child) {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .BusinessSecurity .places {
+        margin-bottom: 0 !important;
+    }
+
+    .BusinessSecurity .places .TextIcon .square:hover {
+        width: 80px !important;
+        height: 80px !important;
+    } 
+
+    .BusinessSecurity h1.headingXl {
+        font-size: 24px;
+    }
+
+    .BusinessSecurity .places:not(:last-child) {
+        margin: 10px;
+    }
 }

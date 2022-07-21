@@ -38,3 +38,15 @@
     color: #707070;
     text-align: center;
 }
+
+@media screen and (max-width: 576px) {
+    .TextIcon .square {
+        width: 80px;
+        height: 80px;
+    }
+
+    .TextIcon .square:hover {
+        width: 100px;
+        height: 100px;
+    }
+}

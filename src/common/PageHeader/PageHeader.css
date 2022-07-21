@@ -1,7 +1,8 @@
 .PageHeader {
-    min-height: 100vh;
     overflow: hidden;
+    min-height: 800px;
 }
+
 
 .pageHeaderContent {
     display: flex;
@@ -35,4 +36,93 @@
 .PageHeader .pageHeaderButton {
     flex-shrink: 0;
     flex-grow: unset;
+}
+
+@media screen and (min-width: 1200px) {
+    .PageHeader .pageHeaderTitle, .PageHeader .pageHeaderText {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .PageHeader .carouselWrapper .pageHeaderCarousel .thumb {
+        width: 120px !important;
+        height: 80px !important;
+    }
+
+    .PageHeader .pageHeaderTitle, .PageHeader .pageHeaderText {
+        width: 350px;
+    }
+
+    .PageHeader .pageHeaderText {
+        font-size: 24px;
+    }
+
+    .PageHeader .carouselWrapper .pageHeaderCarousel {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .PageHeader {
+        min-height: 850px;
+    }
+
+    .PageHeader .pageHeaderTitle, .PageHeader .pageHeaderText {
+        text-align: center;
+        width: 100%;
+    }
+
+    .PageHeader .buttonWrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .PageHeader .carouselWrapper {
+        justify-content: center !important;
+    }
+
+    .PageHeader .carouselWrapper .pageHeaderCarousel {
+        width: 500px;
+        margin-bottom: 50px;
+    }
+
+    .PageHeader .carouselWrapper .pageHeaderCarousel .thumb {
+        width: 150px !important;
+        height: 99px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .PageHeader .pageHeaderTitle {
+        font-size: 2.5rem;
+    }
+
+    .PageHeader .pageHeaderText {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .PageHeader .carouselWrapper .pageHeaderCarousel .thumb {
+        width: 120px !important;
+        height: 86px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .PageHeader .carouselWrapper .pageHeaderCarousel {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+    .PageHeader .carouselWrapper .pageHeaderCarousel .thumb {
+        width: 100px !important;
+        height: 66px !important;
+    }
 }

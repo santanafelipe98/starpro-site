@@ -3,14 +3,23 @@ import PropTypes from 'prop-types'
 import '../../styles/FooterNav.css'
 
 import FooterNavLink from './FooterNavLink'
+import { sanitizeUrl } from '../../utils/UrlUtils'
+import { useLocation } from 'react-router-dom'
 
 const FooterNav = props => {
-    const renderItem = useCallback((item, i) => (
-        <FooterNavLink
-            active={ props.activeIndex === i }
-            key={`FooterNavLink${i}`}
-            {...item} />
-    ), [props.activeIndex])
+    const location = useLocation()
+
+    const renderItem = useCallback((item, i) => {
+        const sanitizedUrl     = sanitizeUrl(item.href)
+        const sanitizedLocation = sanitizeUrl(location.pathname)
+
+        return (
+            <FooterNavLink
+                active={ sanitizedUrl === sanitizedLocation }
+                key={`FooterNavLink${i}`}
+                {...item} />
+        )
+    }, [location.pathname])
     
     const items = props.items || []
     
@@ -28,7 +37,6 @@ FooterNav.propTypes = {
             title: PropTypes.string
         }
     )),
-    activeIndex: PropTypes.number
 }
 
 export default FooterNav

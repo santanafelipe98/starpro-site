@@ -12,3 +12,16 @@
         max-width: 1140px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .Footer .contact, .Footer .social, .Footer .brandWrapper {
+        justify-content: center !important;
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    .Footer .FooterNav {
+        margin-bottom: 50px;
+    }
+}

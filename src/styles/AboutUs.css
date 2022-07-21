@@ -10,3 +10,45 @@
     position: absolute;
     right: -50px;
 }
+
+@media screen and (max-width: 1100px) {
+    .AboutUs .PageHeader .pageHeaderContent {
+        flex-direction: column;
+    }
+
+    .AboutUs .PageHeader .pageHeaderText, .AboutUs .PageHeader .pageHeaderTitle {
+        width: 100%;
+        text-align: center;
+    }
+
+    .AboutUs .PageHeader .pageHeaderContent {
+        min-height: 100%;
+    }
+
+    .AboutUs .PageHeader .pageHeaderContent .left {
+        padding: 0 20px;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .AboutUs .PageHeader .pageHeaderContent .right {
+        position: relative;
+    }
+
+
+    .AboutUs .Thumbnail {
+        top: -50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .AboutUs .Thumbnail {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .AboutUs .Thumbnail {
+        width: 440px !important;
+    }
+}

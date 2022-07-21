@@ -9,6 +9,10 @@ import CustomSelect from '../CustomSelect/CustomSelect'
 const ContactForm = props => {
     const options = [
         {
+            value: '',
+            title: 'Selecione o serviço'
+        },
+        {
             value: 'TRATAMENTO_FITOSSANITARIO',
             title: 'Tratamento Fitossanitário',
         },
@@ -36,7 +40,7 @@ const ContactForm = props => {
             <form>
                 <div className="row mb-3">
                     <div className="col-md-6">
-                        <Input label="Nome" />
+                        <Input className="inputName" label="Nome" />
                     </div>
                     <div className="col-md-6">
                         <Input label="Nº celular" />

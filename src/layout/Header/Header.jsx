@@ -17,10 +17,7 @@ import HamburguerButton from '../../common/HamburguerButton/HamburguerButton'
 import SideNav from './SideNav'
 import SideNavItem from './SideNavItem'
 import { useResize } from '../../hooks/useResize'
-
-function sanitizeUrl(url) {
-    return url.replace(/[/#]/g, '')
-}
+import { sanitizeUrl } from '../../utils/UrlUtils'
 
 const Header = props => {
     const location                        = useLocation()
@@ -61,11 +58,6 @@ const Header = props => {
             url: "/"
         },
         {
-            title: "Segmentos",
-            url: "/#nossos_servicos",
-            hash: true
-        },
-        {
             title: "Serviços",
             url: "#0",
             items: [
@@ -98,7 +90,7 @@ const Header = props => {
         {
             title: 'Contato',
             url: '#contate_nos',
-            hash: true
+            hash: true,
         }
     ])
 
@@ -166,7 +158,6 @@ const Header = props => {
 
 Header.propTypes = {
     fixed: PropTypes.bool,
-
 }
 
 export default Header

@@ -3,5 +3,46 @@
 }
 
 .LicenseBanner .container {
-    padding: 120px 11%;
+    padding: 120px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .LicenseBanner .headingXl {
+        font-size: 2.2vw !important;
+    }
+
+    .LicenseBanner .headingMd {
+        font-size: 1.8vw !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .LicenseBanner .headingXl {
+        font-size: 24px;
+    }
+
+    .LicenseBanner .headingMd {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .LicenseBanner .container .row {
+        justify-content: flex-start !important;
+        width: 100%;
+        margin: 0;
+    }
+    .LicenseBanner .container .row .Divider {
+        width: 80%;
+        margin: auto;
+    }
+
+    .LicenseBanner .headingXl {
+        font-size: 20px;
+        margin-bottom: 20px !important;
+    }
+
+    .LicenseBanner .container {
+        padding: 50px 0;
+    }
 }

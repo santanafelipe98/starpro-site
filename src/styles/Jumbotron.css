@@ -1,6 +1,7 @@
 .Jumbotron {
-    height: 110vh;
-    min-height: 600px;
+    padding-top: 80px;
+    position: relative;
+    min-height: 958px;
     background: #333;
 }
 
@@ -14,4 +15,109 @@
 
 .Jumbotron .container {
     height: 100%;
+}
+
+.Jumbotron .serviceText {
+    margin-top: 100px;
+}
+
+.Jumbotron .serviceText .headingXX {
+    width: 50%;
+}
+
+.Jumbotron .serviceText .textLg {
+    width: 45%;
+}
+
+@media screen and (max-width: 991.8px) {
+    .Jumbotron {
+        min-height: 850px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Jumbotron .headingXX {
+        font-size: 35.2px !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .Jumbotron {
+        min-height: 800px;
+    }
+
+    .Jumbotron .serviceText {
+        padding: 50px 10px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Jumbotron .serviceText {
+        margin-top: 30px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .Jumbotron .serviceText .headingXX {
+        width: 70%;
+    }
+    
+    .Jumbotron .serviceText .textLg {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Jumbotron .serviceText .headingXX {
+        width: 80%;
+    }
+    
+    .Jumbotron .serviceText .textLg {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .Jumbotron .serviceText .headingXX {
+        width: 600px;
+    }
+    
+    .Jumbotron .serviceText .textLg {
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Jumbotron .serviceText .headingXX {
+        width: 480px;
+    }
+    
+    .Jumbotron .serviceText .textLg {
+        width: 100%;
+        max-width: 485px;
+    }
+
+    .Jumbotron .serviceText {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Jumbotron .serviceText .headingXX {
+        width: 300px;
+        font-size: 25px !important;
+    }
+
+    .Jumbotron .serviceText .textLg {
+        width: 300px;
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .Jumbotron {
+        min-height: 850px;
+    }
 }

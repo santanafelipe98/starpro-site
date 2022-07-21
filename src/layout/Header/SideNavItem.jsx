@@ -19,6 +19,12 @@ const SideNavItem = props => {
     }, [setOpen, props.onClick, items])
 
     const renderLink = useCallback(() => {
+        if (props.anchor) {
+            return (
+                <a href={props.url} target={props.target} className="navLink">{props.title}</a>
+            )
+        }
+
         if (props.hash) {
             return (
                 <HashLink smooth to={props.url} className={`navLink`}>

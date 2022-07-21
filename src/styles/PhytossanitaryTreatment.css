@@ -1,0 +1,29 @@
+@media screen and (min-width: 1400px) {
+    .PhytossanitaryTreatment .PageHeader .pageHeaderTitle, .PhytossanitaryTreatment .PageHeader .pageHeaderText {
+        width: 400px;
+    }
+
+    .PhytossanitaryTreatment .headingLg, .PhytossanitaryTreatment .textLg {
+        width: 640px;
+    }
+
+    .PhytossanitaryTreatment .defaultLeftContentHorizontalPadding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .PhytossanitaryTreatment .halfSectionHeader .headingLg {
+        font-size: 1.9vw;
+    }
+
+    .PhytossanitaryTreatment .headingLg {
+        font-size: 1.8vw;
+    }
+
+    .PhytossanitaryTreatment .textLg {
+        font-size: 1.2vw;
+    }
+}

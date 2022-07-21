@@ -56,3 +56,78 @@
 .HalfImageSection .image:hover img {
     transform: scale(1.1);
 }
+
+
+@media screen and (min-width: 1400px) {
+    .HalfImageSection .textContent .wrapper {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .HalfImageSection .halfSectionHeader {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .HalfImageSection {
+        flex-direction: column;
+    }
+
+    .HalfImageSection .image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .HalfImageSection .Icon {
+        justify-content: center;
+    }
+
+    .halfSectionHeader {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .HalfImageSection p {
+        text-align: justify;
+    }
+
+    .HalfImageSection .textWrapper {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .HalfImageSection .buttonWrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .HalfImageSection .Icon .iconImage {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .HalfImageSection .buttonWrapper, .HalfImageSection .btnDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .HalfImageSection .textContent,
+    .HalfImageSection .textContent p {
+        text-align: center !important;
+    }
+
+    .HalfImageSection .Icon {
+        justify-content: flex-start;
+    }
+}

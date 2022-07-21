@@ -17,7 +17,7 @@ const SideNav = props => {
     }, [ props.visible ])
 
     return (
-        <div className={`SideNav ${props.visible ? 'open' : ''}`} onClick={ () => console.log('blur') }>
+        <div className={`SideNav ${props.visible ? 'open' : ''}`}>
             <aside>
                 <nav className="sideMenu">
                     <ButtonLink className="mb-3 ml-3 mr-3" to="#">Área do cliente</ButtonLink>

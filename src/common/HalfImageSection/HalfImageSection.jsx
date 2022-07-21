@@ -8,6 +8,7 @@ const HalfImageSection = props => {
     
     return (
         <section
+            id={props.id}
             style={{
                 backgroundColor: props.backgroundColor || '#F4F4F4'
             }}
@@ -15,7 +16,9 @@ const HalfImageSection = props => {
             <div
                 className={`${props.centerContent ? 'd-flex flex-col justify-content-center' : '' } textContent`}
                 style={{ flex: colsSpace[0] }}>
-                { props.children }
+                    <div className="wrapper">
+                        { props.children }
+                    </div>
             </div>
             <div
                 className={`${props.imgGrayscale ? 'blackWhite' : ''} image ${props.imgFlipX ? 'flipX' : ''}`}
@@ -29,7 +32,7 @@ const HalfImageSection = props => {
 HalfImageSection.propTypes = {
     img: PropTypes.string,
     imgAlt: PropTypes.string,
-    imgFlipX: PropTypes.string,
+    imgFlipX: PropTypes.bool,
     imgStyle: PropTypes.shape({
         width: PropTypes.string,
         height: PropTypes.string

@@ -13,3 +13,9 @@
     color: #fff;
     font-size: 1.1rem;
 }
+
+@media screen and (max-width: 768px) {
+    .Icon .iconImage {
+        width: 60px;
+    }
+}

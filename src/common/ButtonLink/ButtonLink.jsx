@@ -8,7 +8,7 @@ import { HashLink } from 'react-router-hash-link'
 
 const ButtonLink = props => {
     const className = useMemo(() => {
-        let classes = `${props.className || ''} ButtonLink`
+        let classes = `${props.className || ''} ButtonLink ${props.rounded ? 'rounded' : ''}`
 
         switch (props.variant) {
             case 'primary':
@@ -39,6 +39,12 @@ const ButtonLink = props => {
         return classes
     }, [props.variant, props.className, props.size])
 
+    if (props.anchor) {
+        return (
+            <a href={props.to} className={className} target={props.target}>{props.children}</a>
+        )
+    }
+
     if (props.hash) {
         return (
             <HashLink to={props.to} className={className} smooth>{ props.children }</HashLink>
@@ -53,7 +59,9 @@ const ButtonLink = props => {
 ButtonLink.propTypes = {
     to: PropTypes.string.isRequired,
     variant: PropTypes.oneOf([ 'primary', 'secondary', 'light' ]),
-    hash: PropTypes.bool
+    hash: PropTypes.bool,
+    rounded: PropTypes.bool,
+    anchor: PropTypes.bool
 }
 
 ButtonLink.defaultProps = {

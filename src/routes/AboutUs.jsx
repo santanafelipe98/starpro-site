@@ -6,10 +6,10 @@ import PageHeader from '../common/PageHeader/PageHeader'
 import CallToActionBanner from '../common/CallToActionBanner/CallToActionBanner'
 import ContactUs from '../common/ContactUs/ContactUs'
 import InternationalCertification from '../common/InternationalCertification/InternationalCertification'
-import KnowUs from '../common/KnowUs'
 import MissionVisionValues from '../common/MissionVisionValues/MissionVisionValues'
-import ButtonLink from '../common/ButtonLink/ButtonLink'
 import Thumbnail from '../common/Thumbnail/Thumbnail'
+import GoToTop from '../common/GoToTop/GoToTop'
+import TalkWithUsButton from '../common/TalkWithUsButton/TalkWithUsButton'
 
 const AboutUs = props => (
     <main className="AboutUs">
@@ -23,7 +23,7 @@ const AboutUs = props => (
                         A Starpro é reconhecida no mercado pelo seu alto padrão de qualidade.
                     </p>
 
-                    <ButtonLink to="#contate_nos" hash className="pageHeaderButton mt-4">Fale com nossos especialistas</ButtonLink>
+                    <TalkWithUsButton className="pageHeaderButton mt-4">Fale com nossos especialistas</TalkWithUsButton>
                 </div>
                 <div className="right">
                     <Thumbnail
@@ -36,12 +36,12 @@ const AboutUs = props => (
         </PageHeader>
         <MissionVisionValues />
         <InternationalCertification />
-        <KnowUs />
         <ContactUs />
         <CallToActionBanner>
             <h1 className="headingLg mb-3 text-weight-light text-uppercase">Tratamento térmico é com a Starpro</h1>
             <h2 className="headingMd">Estamos prontos para lhe atender</h2>
         </CallToActionBanner>
+        <GoToTop />
     </main>
 )
 

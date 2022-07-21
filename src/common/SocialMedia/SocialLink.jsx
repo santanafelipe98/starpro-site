@@ -4,7 +4,7 @@ import './SocialLink.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const SocialLink = props => (
-    <a href={props.href} className="SocialLink">
+    <a href={props.href} className="SocialLink" target="_blank">
         <FontAwesomeIcon icon={['fab', props.icon]} size="lg" color="#fff" />
     </a>
 )

@@ -5,7 +5,7 @@ import './Button.css'
 
 const Button = props => {
     const className = useMemo(() => {
-        let classes = `${props.className || ''} Button`
+        let classes = `${props.className || ''} Button ${props.rounded ? 'rounded' : ''}`
 
         switch (props.variant) {
             case 'primary':
@@ -44,7 +44,8 @@ const Button = props => {
 
 Button.propTypes = {
     variant: PropTypes.oneOf([ 'primary', 'secondary', 'material' ]),
-    size: PropTypes.oneOf([ 'xs', 'sm', 'md', 'lg', 'xl' ])
+    size: PropTypes.oneOf([ 'xs', 'sm', 'md', 'lg', 'xl' ]),
+    rounded: PropTypes.bool
 }
 
 Button.defaultProps = {

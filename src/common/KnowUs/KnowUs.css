@@ -1,6 +1,7 @@
 
 .KnowUs {
     background: #F8F8F8;
+    overflow: hidden;
 }
 
 .KnowUs .videoPlaceholder {
@@ -29,4 +30,30 @@
 .KnowUs p {
     color: #707070;
     line-height: 1.8;
+}
+
+@media screen and (max-width: 1200px) {
+    .KnowUs .videoPlaceholder img {
+        width: 100%;
+    }
+
+    .KnowUs .videoPlaceholder .videoThumb {
+        left: calc(50% - 25px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .KnowUs h2,
+    .KnowUs p {
+        text-align: center;
+    }
+
+    .KnowUs .videoPlaceholder { 
+        margin-bottom: 20px;
+    }
+    .KnowUs .buttonWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
 }

@@ -14,6 +14,7 @@ import UrbanPestControl from './routes/UrbanPestControl'
 import PlantSanitation from './routes/PlantSanitation'
 import WaterTankCleaning from './routes/WaterTankCleaning'
 import SanitizationOfEnviroments from './routes/SanitizationOfEnviroments'
+import PageNotFound from './routes/404'
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <div className="bootstrap-wrapper">
         <Template>
           <Routes>
-            <Route index path="/" element={<Home />} />
+            <Route index path="/" exact element={<Home />} />
             <Route path="a-starpro" element={<AboutUs />} />
             <Route path="servicos">
               <Route path="tratamento-fitossanitario" element={ <PhytossanitaryTreatment /> } />
@@ -30,6 +31,7 @@ function App() {
               <Route path="saneamento-vegetal" element={ <PlantSanitation /> } />
               <Route path="limpeza-e-desinfeccao-de-caixa-dagua" element={ <WaterTankCleaning /> } />
             </Route>
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Template>
       </div>

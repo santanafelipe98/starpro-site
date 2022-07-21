@@ -1,3 +1,75 @@
-.UrbanPestControl .PageHeader .pageHeaderText {
-    width: 60%;
+
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .UrbanPestControl .halfSectionHeader .headingLg {
+        font-size: 2vw !important;
+    }
+
+    .UrbanPestControl .HalfImageSection .headingLg {
+        font-size: 1.8vw !important;
+    }
+
+    .UrbanPestControl .HalfImageSection .textLg {
+        font-size: 1.2vw !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .UrbanPestControl .PageHeader .pageHeaderText,
+    .UrbanPestControl .HalfImageSection .headingLg,
+    .UrbanPestControl .HalfImageSection .headingMd,
+    .UrbanPestControl .HalfImageSection .textLg,
+    .UrbanPestControl .defaultLeftContentHorizontalPadding .btnDiv {
+        width: 640px;
+    }
+
+    .UrbanPestControl .enviromentIcons { 
+        max-width: 640px;
+    }
+
+    .UrbanPestControl .defaultLeftContentHorizontalPadding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .UrbanPestControl .PageHeader .pageHeaderTitle {
+        font-size: 40px;
+    }
+
+    .UrbanPestControl .paragraph {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .UrbanPestControl .paragraph {
+        width: 100%;
+    }
+
+    .UrbanPestControl .PageHeader .pageHeaderText {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .HalfImageSection .image {
+        min-height: 300px;
+    }
+
+    .UrbanPestControl #ambiente_mais_seguro p {
+        margin-bottom: 25px !important;
+    }
+
+    .UrbanPestControl #dividerWrapper {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .UrbanPestControl #dividerWrapper .Divider {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
 }

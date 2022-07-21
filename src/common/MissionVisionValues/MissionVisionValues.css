@@ -1,4 +1,3 @@
-
 .MissionVisionValues {
     padding-bottom: 200px;
 }
@@ -68,4 +67,37 @@
 
 .MissionVisionValues ul.values li {
     margin-left: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+    .MissionVisionValues .HalfImageSection .headingLg,
+    .MissionVisionValues .HalfImageSection .headingMd,
+    .MissionVisionValues .HalfImageSection .textLg,
+    .MissionVisionValues .defaultLeftContentHorizontalPadding .btnDiv {
+        width: 640px;
+    }
+
+    .MissionVisionValues .HalfImageSection .defaultLeftContentHorizontalPadding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mission {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .MissionVisionValues {
+        padding-bottom: 100px;
+    }
+
+    .MissionVisionValues .HalfImageSection .Divider {
+        position: absolute;
+        left: 0;
+    }
 }

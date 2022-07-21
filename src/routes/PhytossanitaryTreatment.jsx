@@ -9,25 +9,32 @@ import CallToActionBanner from '../common/CallToActionBanner/CallToActionBanner'
 import HalfImageSection from '../common/HalfImageSection/HalfImageSection'
 import Divider from '../common/Divider/Divider'
 import BusinessSecurity from '../common/BusinessSecurity/BusinessSecurity'
+import '../styles/PhytossanitaryTreatment.css'
+import GoToTop from '../common/GoToTop/GoToTop'
+import TalkWithUsButton from '../common/TalkWithUsButton/TalkWithUsButton'
 
 const PhytossanitaryTreatment = props => (
     <section className="PhytossanitaryTreatment">
         <PageHeader
+            navbarFixed
             padding={{
                 top: '120px'
             }}>
             <div className="container">
                 <div className="row">
-                    <div className="col">
-                        <h1 className="pageHeaderTitle mb-5">Tratamento Fitossanitário</h1>
+                    <div className="col-md-12 col-lg-6">
+                        <h1 className="pageHeaderTitle text-uppercase mb-5">Tratamento Fitossanitário Starpro</h1>
                         <p className="pageHeaderText mt-5 mb-5">
                             Especialista em controle de pragas para garantir que suas cargas fiquem seguras.
                         </p>
 
-                        <ButtonLink hash to="#contate_nos" className="pageHeaderButton mt-4">Fale com nossos especialistas</ButtonLink>
+                        <div className="buttonWrapper">
+                            <TalkWithUsButton className="pageHeaderButton mt-4">Fale com nossos especialistas</TalkWithUsButton>
+                        </div>
                     </div>
-                    <div className="col d-flex justify-content-end">
+                    <div className="col-md-12 col-lg-6 d-flex justify-content-end carouselWrapper">
                         <Carousel
+                            className="pageHeaderCarousel"
                             images={[
                                 {
                                     src: `${process.env.PUBLIC_URL}/images/plataformas.jpg`,
@@ -79,7 +86,6 @@ const PhytossanitaryTreatment = props => (
         </HalfImageSection>
         <BusinessSecurity />
         <InternationalCertification />
-        <KnowUs />
         <ContactUs />
         <CallToActionBanner>
             <h1 className="headingLg text-uppercase text-weight-light mb-3">
@@ -87,6 +93,7 @@ const PhytossanitaryTreatment = props => (
             </h1>
             <h2 className="headingMd">Estamos prontos para lhe atender</h2>
         </CallToActionBanner>
+        <GoToTop />
     </section>
 )
 

@@ -1,0 +1,58 @@
+
+@media screen and (min-width: 1400px) {
+    .SanitizationOfEnviroments #o_tratamento .headingXl, .SanitizationOfEnviroments #o_tratamento .textLg {
+        width: 640px;
+    }
+
+    .SanitizationOfEnviroments #o_tratamento .defaultLeftContentHorizontalPadding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .SanitizationOfEnviroments .PageHeader .pageHeaderText,
+    .SanitizationOfEnviroments .HalfImageSection .headingLg,
+    .SanitizationOfEnviroments .HalfImageSection .headingMd,
+    .SanitizationOfEnviroments .HalfImageSection .textLg,
+    .SanitizationOfEnviroments .HalfImageSection .textXl,
+    .SanitizationOfEnviroments .defaultLeftContentHorizontalPadding .btnDiv {
+        width: 640px;
+    }
+
+
+
+    .SanitizationOfEnviroments .enviromentIcons { 
+        width: 640px;
+    }
+
+    .SanitizationOfEnviroments .defaultLeftContentHorizontalPadding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .SanitizationOfEnviroments #o_tratamento .halfSectionHeader .headingXl {
+        font-size: 1.9vw;
+    }
+
+    .SanitizationOfEnviroments #o_tratamento .headingLg {
+        font-size: 1.8vw;
+    }
+
+    .SanitizationOfEnviroments #o_tratamento .textLg {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .SanitizationOfEnviroments .LicenseBanner .container {
+        padding-top: 50px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .SanitizationOfEnviroments .LicenseBanner .container {
+        padding-top: 0px !important;
+    }
+}
