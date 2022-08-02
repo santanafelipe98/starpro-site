@@ -28,9 +28,11 @@ const CustomSelect = props => {
         return () => document.removeEventListener('click', handler)
     }, [ref, setOpen])
 
+    const options = props.options || []
+
     useEffect(() => {
-        setValue(props.options[currentIndex].value || '')
-    }, [setValue, currentIndex, props.options])
+        setValue(options[currentIndex].value || '')
+    }, [setValue, currentIndex, options])
 
     const renderItem = useCallback((o, i) => {
         if (currentIndex === i)
@@ -48,22 +50,31 @@ const CustomSelect = props => {
         <option key={`o${i}`} value={o.value}>{ o.title }</option>
     ), [currentIndex])
 
-    const options = props.options || []
+    const handleChange = useCallback(e => {
+        let newValue = e.target.value
+        setValue(newValue)
+        if (props.change)
+            props.change(props.input.name, newValue)
+    }, [props.change, props.input, setValue])
 
     return (
         <div ref={ref} className="CustomSelect">
             { props.label && <label htmlFor={props.name}>{props.label}</label>}
             <div className="select" onClick={() => setOpen(val => !val)}>
                 <span className="current">{ options[currentIndex].title || '' }</span>
-                <FontAwesomeIcon className="caret" icon={ open ? faCaretDown : faCaretRight } size="1x" color="var(--primary-color)" />
+                <FontAwesomeIcon
+                    className="caret"
+                    icon={ open ? faCaretDown : faCaretRight }
+                    size="1x"
+                    color="var(--primary-color)" />
                 <ul className={ `options ${open ? 'open' : ''}` }>
                     { options.map(renderItem) }
                 </ul>
             </div>
             <select
                 value={value}
-                onChange={ e => setValue(e.target.value) }
-                className="hidden" {...props.input}>
+                onChange={handleChange}
+                className="hidden">
                 { options.map(renderOption) }
             </select>
         </div>

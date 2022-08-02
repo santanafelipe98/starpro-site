@@ -22,8 +22,8 @@ const Textarea = props => {
     return (
         <div className={className}>
             <label htmlFor={(props.input && props.input.name) ? props.input.name : props.name}>{ props.label }</label>
-            <textarea onFocus={handleFocus} onBlur={handleBlur}
-                { ...props.input }></textarea>
+            <textarea { ...props.input } onFocus={handleFocus} onBlur={handleBlur}
+                ></textarea>
         </div>
     )
 }

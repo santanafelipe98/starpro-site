@@ -1,14 +1,23 @@
 .Input {
     position: relative;
     display: flex;
+    flex-direction: column;
     flex: 1;
+}
+
+.Input.isInvalid input {
+    border-bottom: 1px solid #b00020;
+}
+
+.Input.isInvalid label {
+    color: #b00020;
 }
 
 .Input label {
     position: absolute;
     font-size: 1rem;
     left: 10px;
-    top: calc(50% - .5rem);
+    top: calc(25px - .5rem);
     transition: top .3s ease, font-size .3s ease;
     color: var(--primary-color);
 }
@@ -16,6 +25,12 @@
 .Input.focused label {
     top: 0;
     font-size: .7rem;
+}
+
+.invalidFeedback {
+    color: #b00020;
+    font-size: 11px;
+    margin-top: 5px;
 }
 
 .Input input {
