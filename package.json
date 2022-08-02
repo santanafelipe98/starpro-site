@@ -2,7 +2,6 @@
   "name": "starpro-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://santanafelipe98.github.io/starpro-site",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
