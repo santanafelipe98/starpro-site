@@ -15,6 +15,7 @@ import ContactUs from '../common/ContactUs/ContactUs'
 import GoToTop from '../common/GoToTop/GoToTop'
 import CallToActionBanner from '../common/CallToActionBanner/CallToActionBanner'
 import { useRef } from 'react'
+import Translator from '../common/I18n/Translator'
 
 const NextButton = props => (
     <button
@@ -78,9 +79,8 @@ const Home = props => {
             <section className="theCompany">
                 <Container className="popup d-flex flex-row jusitfy-content-center align-items-center">
                     <h2 className="text-center">
-                        A Starpro realiza o Tratamento Fitossanitário,
-                        Controle de Pragas, Sanitização de Ambientes,
-                        <span className="c-primary"> com excelência e profissionalismo.</span>
+                        <Translator path="home.floating_container_text_black" />
+                        <span className="c-primary"><Translator path="home.floating_container_text_green" /></span>
                     </h2>
                 </Container>
                 <div className="container">
@@ -88,11 +88,11 @@ const Home = props => {
                         <div className="col-sm-12 col-lg-6">
                             <Card
                                 className="mr-4"
-                                title="A StarPro está presente em toda a Bahia…"
+                                title={ <Translator path="home.first_card_title" /> }
                                 buttonLink="a-starpro">
                                 <article>
                                     <p className="textLg">
-                                        Uma empresa <span className="c-primary">líder de mercado, reconhecida pelo seu alto padrão de qualidade</span>. Estamos presentes em mais de 7 cidades e em toda Região Metropolitana de Salvador fornecendo serviço de qualidade e responsabilidade para todos.
+                                        <Translator path="home.first_card_text_black_slice_1" /> <span className="c-primary"><Translator path="home.first_card_text_green" /></span><Translator path="home.first_card_text_black_slice_2" />
                                     </p>
                                 </article>
                             </Card>
@@ -111,15 +111,15 @@ const Home = props => {
                                         alt="Ícone de medalha"
                                         className="cardHeaderIcon" />
                                     <p className="cardHeaderTitle">
-                                        Certificado dos<br />
+                                        <Translator path="home.second_card_title_first_line" /><br />
                                         <strong>
-                                            Conselhos Regionais<br />
-                                            de Química e Biologia
+                                        <Translator path="home.second_card_title_second_line" /><br />
+                                         <Translator path="home.second_card_title_third_line" />
                                         </strong>
                                     </p>
                                 </div>
                                 <p className="textLg">
-                                    Tudo dentro dos padrões para melhor lhe atender. A StarPro tem como propósito prestar um serviço de qualidade e segurança, proporcionando satisfação dos nossos clientes e o desenvolvimento sustentável.
+                                <Translator path="home.second_card_text" />
                                 </p>
                             </Card>
                         </div>
@@ -128,7 +128,7 @@ const Home = props => {
             </section>
             <Section
                 id="nossos_servicos"
-                title="Nossos serviços">
+                title={ <Translator path="services.heading" /> }>
                 <Slider
                     ref={slider}
                     className="mt-5"
@@ -144,55 +144,57 @@ const Home = props => {
                 divider>
                 <Container className="mt-5 aboutUsContainer">
                     <div className="aboutUsHeader">
-                        <p className="headingSm">A StarPro é uma empresa de Saúde Ambiental que atua com especialização na prestação de serviços em Controle de Pragas Urbanas, Higienização de Caixa D’Água, Tratamento Fitossanitário e entre outros.</p>
+                        <p className="headingSm">
+                            <Translator path="about_starpro.card_title" />
+                        </p>
                     </div>
                     <div className="aboutUsBody">
                         <div className="row">
                             <div className="col-12 col-sm-6 col-md-6 col-lg-3 brandQuality">
-                                <h4 className="brandQualityTitle">Público</h4>
+                                <h4 className="brandQualityTitle"><Translator path="about_starpro.public_quality_item_title" /></h4>
                                 <div className="brandQualityInfo">
                                     <h3>
-                                        <span className="bigNumber">8</span> mil<br />
-                                        <small>serviços prestados</small>
+                                        <span className="bigNumber"><Translator path="about_starpro.public_quality_item_subtitle_first_line_number" /></span> <Translator path="about_starpro.public_quality_item_subtitle_first_line_text" /><br />
+                                        <small><Translator path="about_starpro.public_quality_item_subtitle_second_line" /></small>
                                     </h3>
                                 </div>
                                 <p className="brandQualityDescription">
-                                    Nós alcançamos e geramos seguranças a milhares de pessoas na Bahia
+                                    <Translator path="about_starpro.public_quality_item_text" />
                                 </p>
                             </div>
                             <div className="col-12 col-sm-6 col-md-6 col-lg-3 brandQuality">
-                                <h4 className="brandQualityTitle">Onde atuamos?</h4>
+                                <h4 className="brandQualityTitle"><Translator path="about_starpro.where_do_we_worl_quality_item_title" /></h4>
                                 <div className="brandQualityInfo">
                                     <h3>
-                                        Toda<br />
-                                        a Bahia
+                                        <Translator path="about_starpro.where_do_we_worl_quality_item_subtitle_first_line" /><br />
+                                        <Translator path="about_starpro.where_do_we_worl_quality_item_subtitle_second_line" />
                                     </h3>
                                 </div>
                                 <p className="brandQualityDescription">
-                                    Estamos presentes em Empresas, Faculdades, Lojas, Mercados em todo o Estado da Bahia
+                                    <Translator path="about_starpro.where_do_we_worl_quality_item_text" />
                                 </p>
                             </div>
                             <div className="col-12 col-sm-6 col-md-6 col-lg-3 brandQuality">
-                                <h4 className="brandQualityTitle">Serviços</h4>
+                                <h4 className="brandQualityTitle"><Translator path="about_starpro.services_quality_item_title" /></h4>
                                 <div className="brandQualityInfo">
                                     <h3>
-                                        <span className="bigNumber">6</span> Serviços
+                                        <span className="bigNumber"><Translator path="about_starpro.services_quality_item_subtitle_first_line_number" /></span> <Translator path="about_starpro.services_quality_item_subtitle_second_line_text" />
                                     </h3>
                                 </div>
                                 <p className="brandQualityDescription">
-                                    Atuamos nos mais diversos segmentos, uma estrutura completa para melhor atender.
+                                    <Translator path="about_starpro.services_quality_item_text" />
                                 </p>
                             </div>
                             <div className="col-12 col-sm-6 col-md-6 col-lg-3 brandQuality">
-                                <h4 className="brandQualityTitle">Avaliação</h4>
+                                <h4 className="brandQualityTitle"><Translator path="about_starpro.rating_quality_item_title" /></h4>
                                 <div className="brandQualityInfo">
                                     <h3>
-                                        Nota <span className="bigNumber">5</span>
+                                        <Translator path="about_starpro.rating_quality_items_subtitle_text" /> <span className="bigNumber"><Translator path="about_starpro.rating_quality_items_subtitle_number" /></span>
                                     </h3>
                                     <img src={`${process.env.PUBLIC_URL}/images/estrelas.png`} alt="Estrelas" className="rating" />
                                 </div>
                                 <p className="brandQualityDescription">
-                                    Nota máxima em avaliação no Google.
+                                    <Translator path="about_starpro.rating_quality_item_text" />
                                 </p>
                             </div>
                         </div>
@@ -205,23 +207,14 @@ const Home = props => {
             <ContactUs />
             <CallToActionBanner>
                 <div>
-                    <h2 className="headingLg text-center c-primary">Fale com um especialista da Starpro</h2>
-                    <h2 className="headingLg text-center">Estamos prontos para lhe atender</h2>
+                    <h2 className="headingLg text-center c-primary">
+                        <Translator path="home.banner_bottom_text_green" />
+                    </h2>
+                    <h2 className="headingLg text-center">
+                        <Translator path="home.banner_bottom_text_black" />
+                    </h2>
                 </div>
             </CallToActionBanner>
-
-            {/* <Container className="callToAction">
-                <div className="container">
-                    <div className="row d-flex align-items-center justify-content-center">
-                        <div>
-                            <h2 className="headingLg text-center c-primary">Fale com um especialista da Starpro</h2>
-                            <h2 className="headingLg text-center">Estamos prontos para lhe atender</h2>
-                        </div>
-                        <TalkWithUsButton size="lg">Fale com nossos especialistas</TalkWithUsButton>
-                    </div>
-                    
-                </div>
-            </Container> */}
             <GoToTop />
         </main>
     )

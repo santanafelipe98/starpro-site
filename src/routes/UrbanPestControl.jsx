@@ -15,6 +15,7 @@ import TalkWithUsButton from '../common/TalkWithUsButton/TalkWithUsButton'
 import { useResize } from '../hooks/useResize'
 
 import enviroments from '../data/enviroments'
+import Translator from '../common/I18n/Translator'
 
 const UrbanPestControl = props => {
     const { width:innerWidth } = useResize()
@@ -50,9 +51,11 @@ const UrbanPestControl = props => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-6">
-                            <h1 className="pageHeaderTitle mb-5">Controle de Pragas Urbanas</h1>
+                            <h1 className="pageHeaderTitle mb-5">
+                                <Translator path="urban_pest_control.header_title" />
+                            </h1>
                             <p className="pageHeaderText mt-5 mb-5">
-                                Especialista em controle de pragas para garantir sua segurança e conforto.
+                                <Translator path="urban_pest_control.header_text" />
                             </p>
 
                             <div className="buttonWrapper">
@@ -96,18 +99,24 @@ const UrbanPestControl = props => {
                 img={`${process.env.PUBLIC_URL}/images/controle-de-pragas-01.png`}
                 imgStyle={{ width: '100%', height:'auto', right: '0', bottom: '0' }}>
                 <div className="halfSectionHeader mt-5 mb-5">
-                    <h2 className="headingLg text-weight-semibold text-uppercase">Controle de Pragas é com Starpro!</h2>
+                    <h2 className="headingLg text-weight-semibold text-uppercase">
+                        <Translator path="urban_pest_control.first_section_header_title" />
+                    </h2>
                 </div>
                 
                 <div className="defaultLeftContentHorizontalPadding">
-                    <h3 className="headingMd mb-4 c-primary">O controle de pragas e vetores no meio urbano é uma questão de saúde ambiental.</h3>
+                    <h3 className="headingMd mb-4 c-primary">
+                        <Translator path="urban_pest_control.first_section_first_paragraph" />
+                    </h3>
 
                     <p className="textLg text-weight-semibold mb-3 c-text">
-                        <strong>Para cada tipo de praga, um tratamento específico e eficaz realizado por um time de especialistas do segmento. Tenha controle de pragas a longo prazo com resultados reais.</strong>
+                        <strong>
+                            <Translator path="urban_pest_control.first_section_second_paragraph" />
+                        </strong>
                     </p>
 
                     <p className="textLg c-text mb-4">
-                        Mosquitos, moscas, formigas, ratos, cupins e baratas, além de serem desagradáveis, podem transmitir inúmeras doenças com consequências desastrosas para o ser humano. E isso pode acontecer em qualquer tipo de ambiente, como sua casa ou local de trabalho.
+                        <Translator path="urban_pest_control.first_section_third_paragraph" />
                     </p>
 
                     <div className="btnDiv d-flex flex-row align-items-center mb-5">
@@ -127,19 +136,19 @@ const UrbanPestControl = props => {
                 imgFlipX>
                 <div className="defaultLeftContentHorizontalPadding c-white py-5">
                     <h2 className="headingLg mb-5">
-                        Como a Starpro controladora de pragas pode ajudar a manter seu ambiente mais seguro?
+                        <Translator path="urban_pest_control.second_section_title" />
                     </h2>
 
                     <p className="textLg paragraph mb-5">
-                        Uma empresa líder de mercado, especializada na prestação de serviços em Controle de Pragas Urbanas, Higienização de Caixa D’água, Sanitização de Ambientes e Saneamento Vegetal.
+                        <Translator path="urban_pest_control.second_section_first_paragraph" />
                     </p>
 
                     <p className="textLg paragraph mb-5">
-                        A Starpro é reconhecida no mercado pelo seu alto padrão de qualidade.
+                        <Translator path="urban_pest_control.second_section_second_paragraph" />
                     </p>
 
                     <p className="textLg paragraph mb-5">
-                        Ambientes urbanos são suscetíveis a proliferação de pragas, trazendo prejuízos econômicos e agravos à saúde humana. A Starpro utiliza as técnicas mais modernas com aplicações estratégicas garantindo um ambiente seguro e protegido.
+                        <Translator path="urban_pest_control.second_section_third_paragraph" />
                     </p>
 
                     <div className="enviromentIcons row">
@@ -160,9 +169,11 @@ const UrbanPestControl = props => {
             <ContactUs />
             <CallToActionBanner>
                 <h1 className="headingLg text-uppercase text-weight-light mb-3">
-                    Controle de Pragas Urbanas é com a Starpro
+                    <Translator path="urban_pest_control.banner_bottom_title" />
                 </h1>
-                <h2 className="headingMd">Estamos prontos para lhe atender</h2>
+                <h2 className="headingMd">
+                    <Translator path="urban_pest_control.banner_bottom_subtitle" />
+                </h2>
             </CallToActionBanner>
             <GoToTop />
         </main>

@@ -3,29 +3,30 @@ import Slider from 'react-slick'
 import './ServiceQuality.css'
 import TalkWithUsButton from '../TalkWithUsButton/TalkWithUsButton'
 import { useCallback } from 'react'
+import Translator from '../I18n/Translator'
 
 const testimonials = [
     {
-        text: 'Desde o atendimento até a conclusão do serviço foram extremamente profissionais!',
-        author: 'Tiago Botelho',
-        role: 'Sócio Diretor Saneando Engenharia'
+        text: <Translator path="testimonials.testimonial_text_1" />,
+        author: <Translator path="testimonials.testimonial_author_1" />,
+        role: <Translator path="testimonials.testimonial_author_role_1" />
     },
     {
-        text: 'Empresa excelente no serviço, com conduta, procedimento e profissionalismo de qualidade e com aplicação dos produtos de forma técnica, segura e dinâmica.',
-        author: 'Madisom Xavier'
+        text: <Translator path="testimonials.testimonial_text_2" />,
+        author: <Translator path="testimonials.testimonial_author_2" />,
     },
     {
-        text: 'Excelente serviço! Equipe comprometida em levar o bem-estar e segurança através do controle de pragas. Recomendo!',
-        author: 'Evelin Lisboa'
+        text: <Translator path="testimonials.testimonial_text_3" />,
+        author: <Translator path="testimonials.testimonial_author_3" />,
     },
     {
-        text: 'Equipe profissional e atenciosa!',
-        author: 'Fábio Müller',
-        role: 'Gerente de operações da VBR Logística'
+        text: <Translator path="testimonials.testimonial_text_4" />,
+        author: <Translator path="testimonials.testimonial_author_4" />,
+        role: <Translator path="testimonials.testimonial_author_role_4" />
     },
     {
-        text: 'Experiência maravilhosa. Empresa muito profissional e correta. Parabéns.',
-        author: 'Rosana Fialho'
+        text: <Translator path="testimonials.testimonial_text_5" />,
+        author: <Translator path="testimonials.testimonial_author_5" />,
     }
 ]
 
@@ -59,10 +60,10 @@ const ServiceQuality = props => {
                 <div className="row">
                     <div className="col-md-12 col-lg-6 bg-primary left">
                         <h2 className="headingXl mb-5 c-white">
-                            Qualidade de atendimento e experiência que ganharam a confiança de nossos clientes
+                            <Translator path="quality_of_service.title" />
                         </h2>
                         <p className="textLg c-white">
-                            Um pouco de quem tem contratado a Starpro e o que elas acham do nosso serviço.
+                            <Translator path="quality_of_service.text" />
                         </p>
                     </div>
                     <div className="col-md-12 col-lg-6 right">

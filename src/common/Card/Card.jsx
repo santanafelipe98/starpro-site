@@ -4,6 +4,7 @@ import './Card.css'
 
 import Container from '../../layout/Container/Container'
 import ButtonLink from '../ButtonLink/ButtonLink'
+import Translator from '../I18n/Translator'
 
 const Card = props => {
     const textStyle = {
@@ -24,7 +25,9 @@ const Card = props => {
                 <ButtonLink
                     hash={props.hashLink}
                     to={props.buttonLink}
-                    className="cardButton">Saiba mais</ButtonLink>
+                    className="cardButton">
+                    <Translator path="buttons.learn_more" />
+                </ButtonLink>
             </div>
         </Container>
     )
@@ -39,7 +42,7 @@ Card.propTypes = {
         lineHeight: PropTypes.number,
         textAlign: PropTypes.string
     }),
-    title: PropTypes.string
+    title: PropTypes.oneOfType( [ PropTypes.string, PropTypes.node ])
 }
 
 Card.defaultProps = {

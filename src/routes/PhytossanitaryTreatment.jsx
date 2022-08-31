@@ -12,6 +12,7 @@ import BusinessSecurity from '../common/BusinessSecurity/BusinessSecurity'
 import '../styles/PhytossanitaryTreatment.css'
 import GoToTop from '../common/GoToTop/GoToTop'
 import TalkWithUsButton from '../common/TalkWithUsButton/TalkWithUsButton'
+import Translator from '../common/I18n/Translator'
 
 const PhytossanitaryTreatment = props => (
     <section className="PhytossanitaryTreatment">
@@ -23,9 +24,11 @@ const PhytossanitaryTreatment = props => (
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-lg-6">
-                        <h1 className="pageHeaderTitle text-uppercase mb-5">Tratamento Fitossanitário Starpro</h1>
+                        <h1 className="pageHeaderTitle text-uppercase mb-5">
+                            <Translator path="starpro_phytosanitary_treatment.header_title" />
+                        </h1>
                         <p className="pageHeaderText mt-5 mb-5">
-                            Especialista em controle de pragas para garantir que suas cargas fiquem seguras.
+                            <Translator path="starpro_phytosanitary_treatment.header_text" />
                         </p>
 
                         <div className="buttonWrapper">
@@ -61,24 +64,30 @@ const PhytossanitaryTreatment = props => (
                 bottom: '0'
             }}>
             <div className="halfSectionHeader mt-5 mb-5">
-                <h2 className="headingLg text-weight-semibold">Controle de pragas através de técnicas eficientes e produtos de alta qualidade</h2>
+                <h2 className="headingLg text-weight-semibold">
+                    <Translator path="starpro_phytosanitary_treatment.first_section_header_title" />
+                </h2>
             </div>
             <div className="defaultLeftContentHorizontalPadding pb-5">
-                <h2 className="headingLg c-primary text-uppercase mb-4">Tratamento Térmico</h2>
+                <h2 className="headingLg c-primary text-uppercase mb-4">
+                    <Translator path="starpro_phytosanitary_treatment.first_section_first_article_header" />
+                </h2>
 
                 <p className="textLg mb-3 c-text">
-                    <strong>Os tratamentos térmicos são uma ótima opção pois não agridem a natureza.</strong>
+                    <strong><Translator path="starpro_phytosanitary_treatment.first_section_first_article_first_paragraph" /></strong>
                 </p>
                 <p className="textLg mb-5 c-text">
-                    A temperatura atua de maneira direta na fisiologia de um inseto. Ao alterar a temperatura, você pode alterar o metabolismo, a respiração e o movimento de um inseto. Por isso os tratamentos térmicos funcionam muito bem para realizar o controle de pragas em cargas.
+                <Translator path="starpro_phytosanitary_treatment.first_section_first_article_second_paragraph" />
                 </p>
 
-                <h2 className="headingLg c-primary text-uppercase mb-4">Fumigação</h2>
+                <h2 className="headingLg c-primary text-uppercase mb-4">
+                    <Translator path="starpro_phytosanitary_treatment.first_section_second_article_header" />
+                </h2>
                 <p className="textLg mb-3 c-text">
-                    A fumigação com Fosfina (PH3) é muito eficaz e amplamente utilizado para fumigação de grãos armazenadas. Ela é aprovada para aplicação em produtos agrícolas crus, alimentos processados, ração animal e seus ingredientes, tabaco e outros itens não alimentares.
+                    <Translator path="starpro_phytosanitary_treatment.first_section_second_article_first_paragraph" />
                 </p>
                 <p className="textLg mb-4 c-text">
-                    A fumigação com Brometo de Metila é de extrema eficiência e importantíssimo para os países que prezam por sua diversidade natural. Ele é um produto com amplo espectro de ação e com uma operacionalidade para cargas em contêiner extremamente eficiente.
+                    <Translator path="starpro_phytosanitary_treatment.first_section_second_article_second_paragraph" />
                 </p>
                 
                 <Divider className="leftSideDivider" />
@@ -89,9 +98,11 @@ const PhytossanitaryTreatment = props => (
         <ContactUs />
         <CallToActionBanner>
             <h1 className="headingLg text-uppercase text-weight-light mb-3">
-                Tratamento térmico é com a Starpro
+                <Translator path="starpro_phytosanitary_treatment.banner_bottom_title" />
             </h1>
-            <h2 className="headingMd">Estamos prontos para lhe atender</h2>
+            <h2 className="headingMd">
+                <Translator path="starpro_phytosanitary_treatment.banner_bottom_subtitle" />
+            </h2>
         </CallToActionBanner>
         <GoToTop />
     </section>

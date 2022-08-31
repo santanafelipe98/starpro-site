@@ -69,7 +69,7 @@ const NavItem = props => {
 
 NavItem.propTypes = {
     url: PropTypes.string,
-    title: PropTypes.string,
+    title: PropTypes.oneOfType([ PropTypes.string, PropTypes.node ]),
     active: PropTypes.bool,
     activeIndex: PropTypes.number,
     items: PropTypes.arrayOf(PropTypes.shape({

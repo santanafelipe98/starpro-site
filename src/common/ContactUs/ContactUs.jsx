@@ -1,11 +1,17 @@
 import React, { useMemo } from 'react'
 import './ContactUs.css'
 
+import {
+    sendMessage
+} from '../../actions/contactActions'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+
 import ContactForm from '../ContactForm'
 import { useResize } from '../../hooks/useResize'
-import { useCallback } from 'react'
 
 const ContactUs = props => {
+    const { sendMessage, contact: { errors, status } } = props
     const { width:innerWidth } = useResize()
 
     const styles = useMemo(() => {
@@ -29,7 +35,8 @@ const ContactUs = props => {
                 <div className="row">
                     <div className="col-lg-6 col-xl-7"></div>
                     <div className="col-lg-6 col-xl-5">
-                        <ContactForm />
+                        <ContactForm
+                            onSubmit={sendMessage} />
                     </div>
                 </div>
             </div>
@@ -37,4 +44,12 @@ const ContactUs = props => {
     )
 }
 
-export default ContactUs
+const mapStateToProps = state => ({
+    contact: state.contact
+})
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+    sendMessage
+}, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactUs)

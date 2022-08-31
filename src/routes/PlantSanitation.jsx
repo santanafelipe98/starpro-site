@@ -10,6 +10,7 @@ import GoToTop from '../common/GoToTop/GoToTop'
 import TalkWithUsButton from '../common/TalkWithUsButton/TalkWithUsButton'
 
 import Carousel from '../common/Carousel/Carousel'
+import Translator from '../common/I18n/Translator'
 import LicenseBanner from '../common/LicenseBanner/LicenseBanner'
 
 
@@ -23,9 +24,11 @@ const PlantSanitation = props => (
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-lg-6">
-                        <h1 className="pageHeaderTitle mb-5">Saneamento Vegetal</h1>
+                        <h1 className="pageHeaderTitle mb-5">
+                            <Translator path="plant_sanitation.header_title" />
+                        </h1>
                         <p className="pageHeaderText mt-5 mb-5">
-                            Especialista em eliminação da vegetação indesejada
+                            <Translator path="plant_sanitation.header_text" />
                         </p>
 
                         <div className="buttonWrapper">
@@ -62,15 +65,17 @@ const PlantSanitation = props => (
             imgAlt="Detetizador em uma estufa"
             imgGrayscale>
             <div className="halfSectionHeader">
-                <h2 className="headingLg c-white text-weight-semibold">Controle de pragas através de técnicas eficientes e produtos de alta qualidade</h2>
+                <h2 className="headingLg c-white text-weight-semibold">
+                    <Translator path="plant_sanitation.first_section_header_title" />
+                </h2>
             </div>
             <div className="defaultLeftContentHorizontalPadding">
                 <p className="textXl mt-5 mb-5 c-text">
-                    Eliminação da vegetação indesejada através de poda, capina mecanizada ou química com uso de herbicidas. Indicado para jardins, pátios, pavimentos diversos e qualquer ambiente onde exista necessidade.
+                    <Translator path="plant_sanitation.first_section_first_paragraph" />
                 </p>
                 
                 <div className="btnDiv">
-                    <TalkWithUsButton className="mt-4 mb-5">Fale com nossos especialistas</ TalkWithUsButton>
+                    <TalkWithUsButton className="mt-4 mb-5" />
                 </div>     
             </div>
         </HalfImageSection>
@@ -79,9 +84,11 @@ const PlantSanitation = props => (
         <ContactUs />
         <CallToActionBanner>
             <h1 className="headingLg text-uppercase text-weight-light mb-3">
-                Saneamento Vegetal é com a Starpro
+                <Translator path="plant_sanitation.banner_bottom_title" />
             </h1>
-            <h2 className="headingMd">Estamos prontos para lhe atender</h2>
+            <h2 className="headingMd">
+                <Translator path="plant_sanitation.banner_bottom_subtitle" />
+            </h2>
         </CallToActionBanner>
         <GoToTop />
     </main>

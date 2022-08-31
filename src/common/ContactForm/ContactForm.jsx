@@ -6,6 +6,7 @@ import Textarea from '../Textarea'
 import Button from '../Button/Button'
 import CustomSelect from '../CustomSelect/CustomSelect'
 import normalizePhone from '../../utils/normalizePhone'
+import Translator from '../I18n/Translator'
 import { Field, reduxForm } from 'redux-form'
 import { isPhone, isEmail, required } from '../../utils/formValidations'
 
@@ -13,27 +14,27 @@ let ContactForm = props => {
     const options = [
         {
             value: '',
-            title: 'Selecione o serviço'
+            title: <Translator path="contact_form.select_quote_default_option" />
         },
         {
             value: 'TRATAMENTO_FITOSSANITARIO',
-            title: 'Tratamento Fitossanitário',
+            title: <Translator path="services.phytosanitary_treatment_card_title" />,
         },
         {
             value: 'CONTROLE_DE_PRAGAS_URBANAS',
-            title: 'Controle de Pragas Urbanas'
+            title: <Translator path="services.urban_pest_control_card_title" />
         },
         {
             value: 'LIMPEZA_E_DESINFECCAO_DE_CAIXA_DAGUA',
-            title: 'Limpeza e Desinfecção de Caixa D\'água'
+            title: <Translator path="services.water_tank_cleaning_and_disinfection_card_title" />
         },
         {
             value: 'SANITIZACAO_DE_AMBIENTES',
-            title: 'Sanitização de Ambientes'
+            title: <Translator path="services.sanitization_of_environments_card_title" />
         },
         {
             value: 'SANEAMENTO_VEGETAL',
-            title: 'Saneamento Vegetal'
+            title: <Translator path="services.plant_sanitation_card_title" />
         }
     ]
 
@@ -41,40 +42,40 @@ let ContactForm = props => {
 
     return (
         <div className="ContactForm">
-            <h1 className="headingXl text-center mb-3 c-primary">Entre em contato</h1>
+            <h1 className="headingXl text-center mb-3 c-primary">
+                <Translator path="contact_form.heading" />
+            </h1>
             <form onSubmit={handleSubmit}>
                 <div className="row mb-3">
                     <div className="col-md-6">
                         <Field
                             className="inputName"
-                            label="Nome"
+                            label={ <Translator path="contact_form.input_name_label" /> }
                             name="name"
                             component={Input}
                             validate={required} />
                     </div>
                     <div className="col-md-6">
                         <Field
-                            label="Nº celular"
+                            label={ <Translator path="contact_form.input_cell_number_label" /> }
                             name="telephone"
                             component={Input}
-                            normalize={normalizePhone}
-                            validate={[required, isPhone]} />
+                            normalize={normalizePhone} />
                     </div>
                 </div>
                 <div className="row mb-4">
                     <div className="col-md-12">
                         <Field
                             type="email"
-                            label="E-mail"
+                            label={ <Translator path="contact_form.input_email_label" /> }
                             name="email"
-                            component={Input}
-                            validate={[required, isEmail]} />
+                            component={Input} />
                     </div>
                 </div>
                 <div className="row mb-4">
                     <div className="col-md-9">
                         <Field
-                            label="Solicite orçamento"
+                            label={ <Translator path="contact_form.select_quote_label" /> }
                             options={options}
                             name="serviceType"
                             component={CustomSelect} />
@@ -83,14 +84,14 @@ let ContactForm = props => {
                 <div className="row">
                     <div className="col-md-12">
                         <Field
-                            label="Digite sua mensagem aqui"
+                            label={ <Translator path="contact_form.textarea_type_your_text_here" /> }
                             name="message"
                             component={Textarea} />
                     </div>
                 </div>
                 <div className="d-flex">
                     <Button variant="material" type="submit" size="lg">
-                        Enviar
+                        <Translator path="contact_form.button" />
                     </Button>
                 </div>
             </form>

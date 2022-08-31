@@ -18,6 +18,8 @@ import SideNav from './SideNav'
 import SideNavItem from './SideNavItem'
 import { useResize } from '../../hooks/useResize'
 import { sanitizeUrl } from '../../utils/UrlUtils'
+import I18n from '../../common/I18n/I18n'
+import Translator from '../../common/I18n/Translator'
 
 const Header = props => {
     const location                        = useLocation()
@@ -54,41 +56,41 @@ const Header = props => {
 
     const [ items ] = useState([
         {
-            title: "Home",
+            title: <Translator path="header.home" />,
             url: "/"
         },
         {
-            title: "Serviços",
+            title: <Translator path="header.services" />,
             url: "#0",
             items: [
                 {
-                    title: 'Tratamento Fitossanitário',
+                    title: <Translator path="services.phytosanitary_treatment_card_title" />,
                     url: 'servicos/tratamento-fitossanitario'
                 },
                 {
-                    title: 'Controle de Pragas Urbanas',
+                    title: <Translator path="services.urban_pest_control_card_title" />,
                     url: 'servicos/controle-de-pragas-urbanas'
                 },
                 {
-                    title: 'Limpeza e Desinfecção de Caixa D\'água',
+                    title: <Translator path="services.water_tank_cleaning_and_disinfection_card_title" />,
                     url: 'servicos/limpeza-e-desinfeccao-de-caixa-dagua'
                 },
                 {
-                    title: 'Sanitização de Ambientes',
+                    title: <Translator path="services.sanitization_of_environments_card_title" />,
                     url: 'servicos/sanitizacao-de-ambientes'
                 },
                 {
-                    title: 'Saneamento Vegetal',
+                    title: <Translator path="services.plant_sanitation_card_title" />,
                     url: 'servicos/saneamento-vegetal'
                 }
             ]
         },
         {
-            title: "A Starpro",
+            title: <Translator path="header.starpro" />,
             url: 'a-starpro'
         },
         {
-            title: 'Contato',
+            title: <Translator path="header.contact" />,
             url: '#contate_nos',
             hash: true,
         }
@@ -141,8 +143,11 @@ const Header = props => {
                     <Navbar id="menu">
                         { items.map(renderItem) }
                     </Navbar>
-                    <ButtonLink className="btnLogin mr-4">Área do cliente</ButtonLink>
+                    <ButtonLink className="btnLogin mr-4" to="http://members.starproambiental.com.br/" anchor target="_blank">
+                        <Translator path="buttons.customers_area" />
+                    </ButtonLink>
                     <ContactLinks />
+                    <I18n />
                     <HamburguerButton
                         className="ml-3"
                         open={showSideNav}

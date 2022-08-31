@@ -19,7 +19,7 @@ const Section = props => (
 )
 
 Section.propTypes = {
-    title: PropTypes.string,
+    title: PropTypes.oneOfType( [ PropTypes.string, PropTypes.node] ),
     divider: PropTypes.bool,
     fluid: PropTypes.bool,
 }

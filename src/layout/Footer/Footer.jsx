@@ -1,4 +1,5 @@
 import React from 'react'
+import Translator from '../../common/I18n/Translator'
 import SocialMedia from '../../common/SocialMedia/SocialMedia'
 import '../../styles/Footer.css'
 import ContactInfo from './ContactInfo'
@@ -8,15 +9,15 @@ import FooterNav from './FooterNav'
 const items = [
     {
         href: '/',
-        title: 'Home'
+        title: <Translator path="header.home" />
     },
     {
         href: 'a-starpro',
-        title: 'Starpro'
+        title: <Translator path="header.starpro" />
     },
     {
         href: '#contate_nos',
-        title: 'Contato',
+        title: <Translator path="header.contact" />,
         hash: true
     }
 ]

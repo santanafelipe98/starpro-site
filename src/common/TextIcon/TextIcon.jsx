@@ -14,7 +14,7 @@ const TextIcon = props => (
 )
 
 TextIcon.propTypes = {
-    description: PropTypes.string.isRequired,
+    description: PropTypes.oneOfType([ PropTypes.string, PropTypes.node ]).isRequired,
     icon: PropTypes.string.isRequired,
     iconAlt: PropTypes.string.isRequired
 }

@@ -14,9 +14,9 @@ const ContactLinks = props => (
             </a>
         </li>
         <li>
-            <HashLink smooth className="contactLink svgIcon" to="https://api.whatsapp.com/send/?phone=557183531931&text=Preciso+de+um+atendimento.&type=phone_number&app_absent=0">
+            <a smooth className="contactLink svgIcon" href="https://api.whatsapp.com/send/?phone=557183531931&text=Preciso+de+um+atendimento.&type=phone_number&app_absent=0" target="_blank">
                 <FontAwesomeIcon icon={faEnvelope} color="#fff" size="1x" />
-            </HashLink>
+            </a>
         </li>
     </ul>
 )

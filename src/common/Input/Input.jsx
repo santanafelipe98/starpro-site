@@ -6,16 +6,16 @@ import './Input.css'
 
 const Input = props => {
     const [ isFocused, setIsFocused ] = useState(false)
-    const { meta: { touched, error } } = props
+    const { meta: { touched, error }, className, input, label } = props
 
-    const className = useMemo(() => {
+    const _classes = useMemo(() => {
         let classes = `${props.className || ''} Input ${touched && error ? 'isInvalid' : ''}`
 
         if (isFocused)
             classes += ' focused'
         
         return classes
-    }, [isFocused, props.className, error])
+    }, [isFocused, className, error, touched])
 
     const handleFocus = useCallback(() => setIsFocused(true), [setIsFocused])
     const handleBlur  = useCallback((e) => {
@@ -24,17 +24,14 @@ const Input = props => {
     }, [setIsFocused])
 
     return (
-        <div className={className}>
-            <label htmlFor={(props.input && props.input.name) ? props.input.name : props.name}>{props.label}</label>
+        <div className={_classes}>
+            <label htmlFor={input && input.name ? input.name : props.name}>{label}</label>
             <input
-                { ...props.input }
+                { ...input }
                 onFocus={handleFocus} onBlur={handleBlur}
                  />
-            { 
-            touched &&
-                (error
-                    && <div className="invalidFeedback">{ error }</div>
-            ) }
+            {touched && error
+                && <div className="invalidFeedback">{ error }</div>}
         </div>
     )
 }

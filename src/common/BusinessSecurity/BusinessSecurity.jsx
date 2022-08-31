@@ -7,6 +7,7 @@ import TalkWithUsButton from '../TalkWithUsButton/TalkWithUsButton'
 import places from '../../data/places'
 import { useCallback } from 'react'
 import TextIcon from '../TextIcon/TextIcon'
+import Translator from '../I18n/Translator'
 
 const BusinessSecurity = props => {
 
@@ -17,7 +18,7 @@ const BusinessSecurity = props => {
     return (
         <section className="BusinessSecurity d-flex flex-col align-items-center">
             <h1 className="headingXl c-dark text-center mb-5">
-                Segurança para o comércio internacional: sua madeira livre de pragas
+                <Translator path="business_security.title" />
             </h1>
             <Divider className="mb-5 bg-primary" style={ { width: '250px', height: '5px' } } />
 

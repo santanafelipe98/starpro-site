@@ -1,0 +1,22 @@
+.flag {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    filter: grayscale(1);
+}
+
+.flag:not(:last-child) {
+    margin-right: 10px;
+}
+
+.flag:hover {
+    filter: grayscale(0.5);
+}
+  
+.selected {
+    filter: grayscale(0);
+}
+  
+.selected:hover {
+    filter: grayscale(0);
+}

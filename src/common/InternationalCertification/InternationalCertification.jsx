@@ -1,22 +1,27 @@
 import React from 'react'
 import './InternationalCertification.css'
 
+import Translator from '../I18n/Translator'
+
 const InternationalCertification = props => (
     <section {...props} className={`${props.className || ''} InternationalCertification`}>
         <div className="container">
             <div className="row textRow">
                 <div className="col-sm-12 col-lg-6 bg-primary left">
                     <div className="wrapper">
-                        <h2 className="headingXl c-white text-right mb-3">Certificações internacionais</h2>
+                        <h2 className="headingXl c-white text-right mb-3">
+                            <Translator path="international_certifications.title" />
+                        </h2>
                         <p className="textXl c-white text-right">
-                            Temos certificações como: ISO-9001 - GAFTA - FOSFA - NPMA.
-                            Oferecemos segurança total do ínicio ao fim do processo nas documentações necessárias com relatórios de ação.
+                            <Translator path="international_certifications.first_paragraph_text" />
                         </p>
                     </div>
                 </div>
                 <div className="col-sm-12 col-lg-6 right d-flex align-items-center">
                     <div className="wrapper">
-                        <p className="text-right headingLg">A Starpro é reconhecida pelo mercado pelo seu <span className="c-primary text-weight-bold">alto padrão de qualidade.</span></p>
+                        <p className="text-right headingLg">
+                            <Translator path="international_certifications.second_paragraph_text_black" />
+                            <span className="c-primary text-weight-bold"><Translator path="international_certifications.second_paragraph_text_green" /></span></p>
                     </div>
                 </div>
             </div>

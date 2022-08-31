@@ -15,6 +15,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { Provider } from 'react-redux'
 
 import storeConfig from './store/storeConfig'
+import './i18n'
 
 library.add(fab, faPhone, faEnvelope)
 

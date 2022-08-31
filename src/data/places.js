@@ -1,22 +1,24 @@
+import Translator from "../common/I18n/Translator"
+
 const places = [
     {
-        description: 'Portos',
+        description: <Translator path="business_security.sea_ports_card_title" />,
         icon: `${process.env.PUBLIC_URL}/images/porto.png`
     },
     {
-        description: 'Aeroportos',
+        description: <Translator path="business_security.airports_card_title" />,
         icon: `${process.env.PUBLIC_URL}/images/aviao.png`
     },
     {
-        description: 'Navios',
+        description: <Translator path="business_security.ships_card_title" />,
         icon: `${process.env.PUBLIC_URL}/images/navio.png`
     },
     {
-        description: 'Armazéns',
+        description: <Translator path="business_security.warehouses_card_title" />,
         icon: `${process.env.PUBLIC_URL}/images/armazem.png`
     },
     {
-        description: 'Container',
+        description: <Translator path="business_security.container_card_title" />,
         icon: `${process.env.PUBLIC_URL}/images/container.png`
     }
 ]

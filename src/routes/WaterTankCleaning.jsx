@@ -10,6 +10,7 @@ import Carousel from '../common/Carousel/Carousel'
 import GoToTop from '../common/GoToTop/GoToTop'
 import TalkWithUsButton from '../common/TalkWithUsButton/TalkWithUsButton'
 import '../styles/WaterTankCleaning.css'
+import Translator from '../common/I18n/Translator'
 
 const WaterTankCleaning = props => (
     <main className="WaterTankCleaning">
@@ -22,9 +23,11 @@ const WaterTankCleaning = props => (
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-6">
-                            <h1 className="pageHeaderTitle mb-5">Limpeza e Desinfecção de Caixa D'água</h1>
+                            <h1 className="pageHeaderTitle mb-5">
+                                <Translator path="cleaning_and_disinfection_of_water_tanks.header_title" />
+                            </h1>
                             <p className="pageHeaderText mt-5 mb-5">
-                                Especialista em higienização dos reservatórios de água potável.
+                                <Translator path="cleaning_and_disinfection_of_water_tanks.header_text" />
                             </p>
 
                             <div className="buttonWrapper">
@@ -66,12 +69,16 @@ const WaterTankCleaning = props => (
                 bottom: '0'
             }}>
             <div className="halfSectionHeader mt-5 mb-5">
-                <h2 className="headingLg text-weight-semibold">Controle de vegetação através de técnicas eficientes e produtos de alta qualidade</h2>
+                <h2 className="headingLg text-weight-semibold">
+                    <Translator path="cleaning_and_disinfection_of_water_tanks.first_section_header_title" />
+                </h2>
             </div>
             <div className="defaultLeftContentHorizontalPadding pb-5">
-                <h2 className="headingLg c-primary text-uppercase mb-4">O Tratamento</h2>
+                <h2 className="headingLg c-primary text-uppercase mb-4">
+                    <Translator path="cleaning_and_disinfection_of_water_tanks.first_section_first_article_header" />
+                </h2>
                 <p className="textLg mb-5 c-text">
-                    A higienização dos reservatórios de água potável, segundo a ANVISA, deve ser higienizada a cada 06 meses para evitar a proliferação de microrganismos que comprometem a potabilidade da água. Este procedimento consiste na limpeza mecânica e na desinfecção química das paredes internas do reservatório atendendo as legislações vigentes.
+                    <Translator path="cleaning_and_disinfection_of_water_tanks.first_section_first_article_paragraph" />
                 </p>
 
                 <div className="btnDiv">
@@ -87,24 +94,28 @@ const WaterTankCleaning = props => (
             centerContent
             imgGrayscale>
                 <div className="defaultLeftContentHorizontalPadding">
-                    <h2 className="headingLg c-white text-weight-semibold mb-5">Como a Starpro deixa seu ambiente mais seguro através da Limpeza e Desinfecção?</h2>
+                    <h2 className="headingLg c-white text-weight-semibold mb-5">
+                        <Translator path="cleaning_and_disinfection_of_water_tanks.second_section_header_title" />
+                    </h2>
                     <div className="mt-3 c-white">
                         <p className="textXl">
-                            Depois de uma análise realizada pelos especialistas da Starpro, os profissionais dão início ao procedimento através de técnicas e produtos especializados.
+                            <Translator path="cleaning_and_disinfection_of_water_tanks.second_section_text" />
                         </p>
                     </div>
                 </div>
         </HalfImageSection>
         <div className="d-flex justify-content-center py-5">
-            <TalkWithUsButton className="my-5">Fale com nossos especialistas</TalkWithUsButton>
+            <TalkWithUsButton className="my-5" />
         </div>
         <InternationalCertification />
         <ContactUs />
         <CallToActionBanner>
             <h1 className="headingLg text-uppercase text-weight-light mb-3">
-                Limpeza e Desinfecção de Caixa D'água é com a Starpro
+                <Translator path="cleaning_and_disinfection_of_water_tanks.banner_bottom_title" />
             </h1>
-            <h2 className="headingMd">Estamos prontos para lhe atender</h2>
+            <h2 className="headingMd">
+                <Translator path="cleaning_and_disinfection_of_water_tanks.banner_bottom_subtitle" />
+            </h2>
         </CallToActionBanner>
         <GoToTop />
     </main>

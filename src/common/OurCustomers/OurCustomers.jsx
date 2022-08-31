@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCallback } from 'react'
 import Slider from 'react-slick'
+import Translator from '../I18n/Translator'
 
 import './OurCustomers.css'
 
@@ -100,7 +101,7 @@ const OurCustomers = props => {
                 <div className="row">
                     <div className="heading col-md-12  col-lg-4 d-flex flex-row align-items-center">
                         <h1 className="headingXl c-primary">
-                            Os clientes que confiam na Starpro
+                            <Translator path="our_customers.heading" />
                         </h1>
                     </div>
                     <div className="col-md-12 col-lg-8">

@@ -84,7 +84,7 @@ const CustomSelect = props => {
 CustomSelect.propTypes = {
     options: PropTypes.arrayOf(PropTypes.shape({
         value: PropTypes.string,
-        title: PropTypes.string
+        title: PropTypes.oneOfType([ PropTypes.string, PropTypes.node ])
     }))
 }
 

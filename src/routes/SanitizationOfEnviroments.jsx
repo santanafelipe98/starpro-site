@@ -18,6 +18,7 @@ import { useResize } from '../hooks/useResize'
 import '../styles/SanitizationOfEnviroment.css'
 
 import enviroments from '../data/enviroments'
+import Translator from '../common/I18n/Translator'
 
 const SanitizationOfEnviroments = props => {
     const { width:innerWidth } = useResize()
@@ -53,9 +54,11 @@ const SanitizationOfEnviroments = props => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-lg-6">
-                            <h1 className="pageHeaderTitle mb-5">Sanitização de Ambientes</h1>
+                            <h1 className="pageHeaderTitle mb-5">
+                                <Translator path="sanitization_of_environments.header_title" />
+                            </h1>
                             <p className="pageHeaderText mt-5 mb-5">
-                                Especialista em serviço de desinfecção contra vírus, bactérias e fungos.
+                                <Translator path="sanitization_of_environments.header_text" />
                             </p>
 
                             <div className="buttonWrapper">
@@ -97,11 +100,13 @@ const SanitizationOfEnviroments = props => {
                 img={`${process.env.PUBLIC_URL}/images/Imagem 43.png`}
                 imgStyle={{ height: '90%', width: 'auto', bottom: '0' }}>
                 <div className="halfSectionHeader mt-5 mb-5">
-                    <h2 className="headingXl text-uppercase c-white text-weight-semibold">O Tratamento</h2>
+                    <h2 className="headingXl text-uppercase c-white text-weight-semibold">
+                        <Translator path="sanitization_of_environments.first_section_header_title" />
+                    </h2>
                 </div>
                 <div className="defaultLeftContentHorizontalPadding pb-5">
                     <p className="textLg mb-5 c-text">
-                        A sanitização de ambientes impede a dispersão de bactérias e o vírus causador da COVID-19, garantindo a segurança biológica através da aplicação de um produto sanitizante por técnicos especialistas dotados de equipamentos de alta tecnologia, formando uma película protetora em todas as superfícies como pisos, paredes, janelas, mobílias e estruturas de alto contato (corrimão, maçanetas, puxadores de gavetas e armários).
+                        <Translator path="sanitization_of_environments.first_section_text" />
                     </p>
                     
                     <div className="btnDiv">
@@ -118,19 +123,19 @@ const SanitizationOfEnviroments = props => {
                 imgFlipX>
                 <div className="defaultLeftContentHorizontalPadding c-white py-5">
                     <h2 className="headingLg mb-5">
-                        Como a Starpro deixa seu ambiente mais seguro através da sanitização e desinfecção?
+                        <Translator path="sanitization_of_environments.second_section_header_title" />
                     </h2>
 
                     <p className="textLg mb-5">
-                        Depois de uma análise realizada pelos especialistas da Starpro, os profissionais dão início ao procedimento através de técnicas e produtos especializados.
+                        <Translator path="sanitization_of_environments.second_section_first_paragraph" />
                     </p>
 
                     <p className="textLg mb-5">
-                        Nossa equipe de especialistas resolve o problema. Não importa o tamanho do ambiente que se encontra. Conte com o expertise da nossa em sanitização e desinfecção. Seu ambiente limpo e seguro por mais tempo, é a nossa meta.
+                        <Translator path="sanitization_of_environments.second_section_second_paragraph" />
                     </p>
 
                     <p className="textXl mb-3">
-                        <strong>Seu ambiente limpo e seguro.</strong>
+                        <strong><Translator path="sanitization_of_environments.second_section_third_paragraph" /></strong>
                     </p>
                     
                     <div className="wrapper">
@@ -144,7 +149,7 @@ const SanitizationOfEnviroments = props => {
                     </div>
                     
                     <div className="btnDiv">
-                        <TalkWithUsButton className="mt-4" variant="light" >Fale com nossos especialistas!</TalkWithUsButton>
+                        <TalkWithUsButton className="mt-4" variant="light" />
                     </div>
                 </div>
             </HalfImageSection>
@@ -152,9 +157,11 @@ const SanitizationOfEnviroments = props => {
             <ContactUs />
             <CallToActionBanner>
                 <h1 className="headingLg text-uppercase text-weight-light mb-3">
-                    Sanitização de Ambientes é com a Starpro
+                    <Translator path="sanitization_of_environments.banner_bottom_title" />
                 </h1>
-                <h2 className="headingMd">Estamos prontos para lhe atender</h2>
+                <h2 className="headingMd">
+                    <Translator path="sanitization_of_environments.banner_bottom_subtitle" />
+                </h2>
             </CallToActionBanner>
             <GoToTop />
         </main>

@@ -10,6 +10,7 @@ import MissionVisionValues from '../common/MissionVisionValues/MissionVisionValu
 import Thumbnail from '../common/Thumbnail/Thumbnail'
 import GoToTop from '../common/GoToTop/GoToTop'
 import TalkWithUsButton from '../common/TalkWithUsButton/TalkWithUsButton'
+import Translator from '../common/I18n/Translator'
 
 const AboutUs = props => (
     <main className="AboutUs">
@@ -17,13 +18,13 @@ const AboutUs = props => (
             <div className="pageHeaderContent">
                 <div className="left">
                     <h1 className="pageHeaderTitle c-primary text-uppercase mb-5">
-                        Conheça a Starpro
+                        <Translator path="about_us.header_title" />
                     </h1>
                     <p className="pageHeaderText mt-3">
-                        A Starpro é reconhecida no mercado pelo seu alto padrão de qualidade.
+                        <Translator path="about_us.header_text" />
                     </p>
 
-                    <TalkWithUsButton className="pageHeaderButton mt-4">Fale com nossos especialistas</TalkWithUsButton>
+                    <TalkWithUsButton className="pageHeaderButton mt-4" />
                 </div>
                 <div className="right">
                     <Thumbnail
@@ -38,8 +39,12 @@ const AboutUs = props => (
         <InternationalCertification />
         <ContactUs />
         <CallToActionBanner>
-            <h1 className="headingLg mb-3 text-weight-light text-uppercase">Tratamento térmico é com a Starpro</h1>
-            <h2 className="headingMd">Estamos prontos para lhe atender</h2>
+            <h1 className="headingLg mb-3 text-weight-light text-uppercase">
+                <Translator path="about_starpro.banner_bottom_title" />
+            </h1>
+            <h2 className="headingMd">
+                <Translator path="about_starpro.banner_bottom_subtitle" />
+            </h2>
         </CallToActionBanner>
         <GoToTop />
     </main>

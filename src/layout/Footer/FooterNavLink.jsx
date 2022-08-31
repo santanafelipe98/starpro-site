@@ -21,7 +21,7 @@ const FooterNavLink = props => {
 FooterNavLink.propTypes = {
     active: PropTypes.bool,
     href: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired
+    title: PropTypes.oneOfType([ PropTypes.string, PropTypes.node ]).isRequired
 }
 
 export default FooterNavLink

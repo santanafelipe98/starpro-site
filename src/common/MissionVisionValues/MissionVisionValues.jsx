@@ -3,6 +3,7 @@ import HalfImageSection from '../HalfImageSection/HalfImageSection'
 import TalkWithUsButton from '../TalkWithUsButton/TalkWithUsButton'
 import Divider from '../Divider/Divider'
 import './MissionVisionValues.css'
+import Translator from '../I18n/Translator'
 
 const MissionVisionValues = props => (
     <section className="MissionVisionValues">
@@ -11,10 +12,10 @@ const MissionVisionValues = props => (
             imgGrayscale>
                 <div className="defaultLeftContentHorizontalPadding mt-5">
                 <p className="textLg c-text mb-3">
-                    Somos uma empresa que se propõe a oferecer melhor qualidade em todos os nossos serviços, valorizando e respeitando nossa equipe, garantindo bem estar e segurança para todos.
+                    <Translator path="about_starpro.first_section_first_paragraph" />
                 </p>
                 <p className="textLg c-text mb-5">
-                    Esse é o nosso propósito como empresa, que acredita em todos que fazem parte diretamente ou indiretamente da Starpro. Segurança e Saúde Ambiental começa por aqui!
+                    <Translator path="about_starpro.first_section_seconcd_paragraph" />
                 </p>
                 <div className="btnDiv">
                     <TalkWithUsButton className="mt-3 mb-5" size="lg">Fale com nossos especialistas</TalkWithUsButton>
@@ -27,15 +28,19 @@ const MissionVisionValues = props => (
             <div className="container bg-primary">
                 <div className="row missionRow">
                     <div className="mission col-md-12 col-lg-4">
-                        <h3 className="headingLg c-white mb-3">Missão</h3>
-                        <p className="c-white">Prestar serviços de qualidade e segurança, proporcionando satisfação dos nossos clientes e o desenvolvimento sustentável.</p>
+                        <h3 className="headingLg c-white mb-3">
+                            <Translator path="mission_vision_values.mission_title" />
+                        </h3>
+                        <p className="c-white"><Translator path="mission_vision_values.mission_text" /></p>
                     </div>
                     <div className="mission col-md-12 col-lg-4">
-                        <h3 className="headingLg c-white mb-3">Visão</h3>
-                        <p className="c-white">Ser referência na prestação de serviços, promovendo o desenvolvimento continuo dos processos, beneficiando a todos.</p>
+                        <h3 className="headingLg c-white mb-3"><Translator path="mission_vision_values.vision_title" /></h3>
+                        <p className="c-white">
+                            <Translator path="mission_vision_values.vision_text" />
+                        </p>
                     </div>
                     <div className="mission col-md-12 col-lg-4">
-                        <h3 className="headingLg c-white mb-3">Valores</h3>
+                        <h3 className="headingLg c-white mb-3"><Translator path="mission_vision_values.values_title" /></h3>
                         <ul className="textLg values c-white">
                             <li>Qualidade no atendimento</li>
                             <li>Credibilidade</li>

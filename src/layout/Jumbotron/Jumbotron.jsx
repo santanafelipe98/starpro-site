@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 import '../../styles/Jumbotron.css'
 
 import TalkWithUsButton from '../../common/TalkWithUsButton/TalkWithUsButton'
+import Translator from '../../common/I18n/Translator'
 
 const Jumbotron = props => {
     const styles = useMemo(() => ({
@@ -14,11 +15,11 @@ const Jumbotron = props => {
         <section style={styles} className="Jumbotron">
             <div className="container d-flex flex-col align-items-center">
                 <div className="serviceText d-flex flex-col align-items-center c-white text-center p-5">
-                    <p className="headingLg mb-2 text-uppercase"><i>A Starpro é especialista em</i></p>
+                    <p className="headingLg mb-2 text-uppercase"><i><Translator path="home.jumbotron_heading" /></i></p>
                     <h1 className="headingXX text-uppercase mb-3">
-                        Controle de Pragas Urbanas
+                        <Translator path="home.jumbotron_subtitle" />
                     </h1>
-                    <p className="textLg text-weight-light">Uma empresa líder de mercado, especializada na prestação de serviços em Controle de Pragas Urbana, Higienização de Caixa D'água, Sanitização de Ambientes e Saneamento Vegetal.</p>
+                    <p className="textLg text-weight-light"><Translator path="home.jumbotron_text" /></p>
                 </div>
                 <TalkWithUsButton  rounded size="xl">Fale com nossos especialistas</TalkWithUsButton>
             </div>

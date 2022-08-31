@@ -1,27 +1,29 @@
+import Translator from "../common/I18n/Translator";
+
 const enviroments = [
     {
         img: `${process.env.PUBLIC_URL}/images/condominio.png`,
-        description: 'Condomínios'
+        description: <Translator path="sanitization_of_environments.item_condominiums" />
     },
     {
         img: `${process.env.PUBLIC_URL}/images/casas.png`,
-        description: 'Casas'
+        description: <Translator path="sanitization_of_environments.item_houses" />
     },
     {
         img: `${process.env.PUBLIC_URL}/images/restaurantes.png`,
-        description: 'Restaurantes'
+        description: <Translator path="sanitization_of_environments.item_restaurants" />
     },
     {
         img: `${process.env.PUBLIC_URL}/images/industrias.png`,
-        description: 'Indústrias'
+        description: <Translator path="sanitization_of_environments.item_industries" />
     },
     {
         img: `${process.env.PUBLIC_URL}/images/Hoteis.png`,
-        description: 'Hotéis'
+        description: <Translator path="sanitization_of_environments.item_hotels" />
     },
     {
         img: `${process.env.PUBLIC_URL}/images/Hospitais.png`,
-        description: 'Hospitais'
+        description: <Translator path="sanitization_of_environments.item_hospitals" />
     }
 ]
 
