@@ -16,6 +16,8 @@ import GoToTop from '../common/GoToTop/GoToTop'
 import CallToActionBanner from '../common/CallToActionBanner/CallToActionBanner'
 import { useRef } from 'react'
 import Translator from '../common/I18n/Translator'
+import { useTranslation } from 'react-i18next'
+import { useEffect } from 'react'
 
 const NextButton = props => (
     <button
@@ -40,6 +42,8 @@ const Home = props => {
             key={service._id}
             { ...service } />
     ), [])
+
+    const { i18n: { language } } = useTranslation()
 
     const slider = useRef(null)
 
@@ -189,7 +193,11 @@ const Home = props => {
                                 <h4 className="brandQualityTitle"><Translator path="about_starpro.rating_quality_item_title" /></h4>
                                 <div className="brandQualityInfo">
                                     <h3>
-                                        <Translator path="about_starpro.rating_quality_items_subtitle_text" /> <span className="bigNumber"><Translator path="about_starpro.rating_quality_items_subtitle_number" /></span>
+                                        {
+                                            language === "en-US"
+                                                ?   <><span className="bigNumber"><Translator path="about_starpro.rating_quality_items_subtitle_number" /></span> <Translator path="about_starpro.rating_quality_items_subtitle_text" /></>
+                                                : <><Translator path="about_starpro.rating_quality_items_subtitle_text" /> <span className="bigNumber"><Translator path="about_starpro.rating_quality_items_subtitle_number" /></span></>
+                                        }
                                     </h3>
                                     <img src={`${process.env.PUBLIC_URL}/images/estrelas.png`} alt="Estrelas" className="rating" />
                                 </div>

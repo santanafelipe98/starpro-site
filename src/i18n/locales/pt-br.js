@@ -176,6 +176,13 @@ export default {
             vision_title: "Visão",
             vision_text: "Ser referência na prestação de serviços, promovendo o desenvolvimento continuo dos processos, beneficiando a todos.",
             values_title: "Valores",
+            values_list: [
+                "Qualidade no atendimento",
+                "Credibilidade",
+                "Organização",
+                "Pontualidade",
+                "Respeito ao meio ambiente"
+            ]
         },
         buttons: {
             customers_area: "Área do cliente",

@@ -177,6 +177,13 @@ export default {
             vision_title: "Vision",
             vision_text: "To be a reference in the provision of services, promoting the continuous development of processes, benefiting everyone.",
             values_title: "Values",
+            values_list: [
+                "Quality in service",
+                "Credibility",
+                "Organization",
+                "Punctuality",
+                "Respect for the environment"
+            ]
         },
         buttons: {
             customers_area: "Customer's area",
