@@ -36,7 +36,6 @@ const AboutUs = props => (
             </div>
         </PageHeader>
         <MissionVisionValues />
-        <InternationalCertification />
         <ContactUs />
         <CallToActionBanner>
             <h1 className="headingLg mb-3 text-weight-light text-uppercase">

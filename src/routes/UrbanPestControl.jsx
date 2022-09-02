@@ -165,7 +165,6 @@ const UrbanPestControl = props => {
             <div id="dividerWrapper" className="d-flex justify-content-center py-5">
                 <Divider style={{ width: '70%' }} className="my-5" />
             </div>
-            <InternationalCertification />
             <ContactUs />
             <CallToActionBanner>
                 <h1 className="headingLg text-uppercase text-weight-light mb-3">

@@ -94,7 +94,6 @@ const PhytossanitaryTreatment = props => (
             </div>
         </HalfImageSection>
         <BusinessSecurity />
-        <InternationalCertification />
         <ContactUs />
         <CallToActionBanner>
             <h1 className="headingLg text-uppercase text-weight-light mb-3">

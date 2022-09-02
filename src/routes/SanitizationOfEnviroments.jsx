@@ -153,7 +153,6 @@ const SanitizationOfEnviroments = props => {
                     </div>
                 </div>
             </HalfImageSection>
-            <InternationalCertification className="mt-5" />
             <ContactUs />
             <CallToActionBanner>
                 <h1 className="headingLg text-uppercase text-weight-light mb-3">

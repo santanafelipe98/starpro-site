@@ -209,7 +209,6 @@ const Home = props => {
                     </div>
                 </Container>
             </Section>
-            <InternationalCertification id="certificados" />
             <ServiceQuality />
             <OurCustomers />
             <ContactUs />

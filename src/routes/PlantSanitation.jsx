@@ -80,7 +80,6 @@ const PlantSanitation = props => (
             </div>
         </HalfImageSection>
         <LicenseBanner />
-        <InternationalCertification />
         <ContactUs />
         <CallToActionBanner>
             <h1 className="headingLg text-uppercase text-weight-light mb-3">
