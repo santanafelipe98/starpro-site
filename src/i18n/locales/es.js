@@ -24,7 +24,7 @@ export default {
             contact: "Contacto"
         },
         services: {
-            heading: "Nossos Servicios",
+            heading: "Nuestros Servicios",
             phytosanitary_treatment_card_title: "Tratamiento Fitosanitario",
             phytosanitary_treatment_card_text: "StarPro fitosanitario tiene el conocimiento, productos de calidad, capacidad y equipo realizar un tratamiento fitosanitario en un amplia gama de estructuras. control de plagas en comercio internacional de forma segura y eficaz.",
             urban_pest_control_card_title: "Control de Plagas Urbanas",
@@ -37,7 +37,7 @@ export default {
             plant_sanitation_card_text: "La presencia de vegetación en las zonas urbanas exige un mantenimiento periódico, evitando molestias paisajísticas, acumulación de residuos, refugio de roedores e insectos nocivos para la salud humana y de los animales domésticos."
         },
         about_starpro: {
-            heading: "Quienes somos",
+            heading: "Quién somos",
             card_title: "StarPro es una empresa de Salud Ambiental que se especializa en brindar servicios de Control de Plagas Urbanas, Saneamiento de Tanques de Agua, Tratamiento Fitosanitario y entre otros.",
             public_quality_item_title: "Público",
             public_quality_item_subtitle_first_line_number: "8",

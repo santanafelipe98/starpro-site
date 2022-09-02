@@ -16,7 +16,7 @@ import GoToTop from '../common/GoToTop/GoToTop'
 import CallToActionBanner from '../common/CallToActionBanner/CallToActionBanner'
 import { useRef } from 'react'
 import Translator from '../common/I18n/Translator'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import { useEffect } from 'react'
 
 const NextButton = props => (
@@ -144,7 +144,7 @@ const Home = props => {
             </Section>
             <Section
                 className="aboutUs"
-                title="Quem somos"
+                title={ <Translator path="about_starpro.heading" /> }
                 divider>
                 <Container className="mt-5 aboutUsContainer">
                     <div className="aboutUsHeader">
