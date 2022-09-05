@@ -58,9 +58,10 @@ let ContactForm = props => {
                     <div className="col-md-6">
                         <Field
                             label={ <Translator path="contact_form.input_cell_number_label" /> }
-                            name="telephone"
+                            name="phone"
                             component={Input}
-                            normalize={normalizePhone} />
+                            normalize={normalizePhone}
+                            validate={isPhone} />
                     </div>
                 </div>
                 <div className="row mb-4">
@@ -69,7 +70,8 @@ let ContactForm = props => {
                             type="email"
                             label={ <Translator path="contact_form.input_email_label" /> }
                             name="email"
-                            component={Input} />
+                            component={Input}
+                            validate={required} />
                     </div>
                 </div>
                 <div className="row mb-4">
@@ -77,7 +79,7 @@ let ContactForm = props => {
                         <Field
                             label={ <Translator path="contact_form.select_quote_label" /> }
                             options={options}
-                            name="serviceType"
+                            name="service"
                             component={CustomSelect} />
                     </div>
                 </div>
@@ -86,7 +88,8 @@ let ContactForm = props => {
                         <Field
                             label={ <Translator path="contact_form.textarea_type_your_text_here" /> }
                             name="message"
-                            component={Textarea} />
+                            component={Textarea}
+                            validate={required} />
                     </div>
                 </div>
                 <div className="d-flex">

@@ -1,4 +1,7 @@
 import React from 'react'
+
+import Translator from '../I18n/Translator'
+
 import { useCallback } from 'react'
 import { useMemo } from 'react'
 import { useState } from 'react'
@@ -17,11 +20,19 @@ const Input = props => {
         return classes
     }, [isFocused, className, error, touched])
 
-    const handleFocus = useCallback(() => setIsFocused(true), [setIsFocused])
+    const handleFocus = useCallback(e => {
+        setIsFocused(true)
+
+        if (input.onFocus)
+            input.onFocus(e)
+    }, [ input.onFocus ])
     const handleBlur  = useCallback((e) => {
-        if (e.target.value.length === 0)
+        if (e.target.value.length === 0) 
             setIsFocused(false)
-    }, [setIsFocused])
+
+        if (input.onBlur)
+            input.onBlur(e)
+    }, [ input.onBlur ])
 
     return (
         <div className={_classes}>
@@ -31,7 +42,7 @@ const Input = props => {
                 onFocus={handleFocus} onBlur={handleBlur}
                  />
             {touched && error
-                && <div className="invalidFeedback">{ error }</div>}
+                && <div className="invalidFeedback"><Translator path={ error } /></div>}
         </div>
     )
 }

@@ -1,8 +1,18 @@
 .Textarea {
     position: relative;
     display: flex;
+    flex-direction: column;
     flex: 1;
 }
+
+.Textarea.isInvalid textarea {
+    border-bottom: 1px solid #b00020;
+}
+
+.Textarea.isInvalid label {
+    color: #b00020;
+}
+
 
 .Textarea label {
     position: absolute;

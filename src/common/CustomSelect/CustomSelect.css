@@ -3,6 +3,14 @@
     flex-direction: column;
 }
 
+.CustomSelect.isInvalid textarea {
+    border-bottom: 1px solid #b00020;
+}
+
+.CustomSelect.isInvalid label {
+    color: #b00020;
+}
+
 .CustomSelect label {
     color: var(--primary-color);
     font-size: 1rem;

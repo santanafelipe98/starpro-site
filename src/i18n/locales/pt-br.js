@@ -198,6 +198,12 @@ export default {
             select_quote_default_option: "Selecione o serviço",
             textarea_type_your_text_here: "Digite sua mensagem aqui",
             button: "Enviar"
+        },
+        form_validations: {
+            required: "Campo obrigatório*",
+            email_invalid: "E-mail inválido.",
+            phone_invalid: "Número celular inválido.",
+            service_invalid: "Serviço inválido."
         }
     }
 }

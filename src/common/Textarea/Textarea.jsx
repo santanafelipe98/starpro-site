@@ -1,29 +1,40 @@
 import React, { useState, useCallback, useMemo } from 'react'
+import Translator from '../I18n/Translator'
 import './Textarea.css'
 
 const Textarea = props => {
     const [ isFocused, setIsFocused ] = useState(false)
-    
-    const className = useMemo(() => {
-        let classes = `${props.className || ''} Textarea`
+    const { meta: { touched, error }, className, input, label } = props
+
+    const _classes = useMemo(() => {
+        let classes = `${props.className || ''} Textarea ${touched && error ? 'isInvalid' : ''}`
 
         if (isFocused)
             classes += ' focused'
         
         return classes
-    }, [isFocused, props.className])
+    }, [isFocused, className, error, touched])
 
-    const handleFocus = useCallback(() => setIsFocused(true), [setIsFocused])
+    const handleFocus = useCallback(e => {
+        setIsFocused(true)
+
+        if (input.onFocus)
+            input.onFocus(e)
+    }, [ input.onFocus ])
     const handleBlur  = useCallback((e) => {
-        if (e.target.value.length === 0)
+        if (e.target.value.length === 0) 
             setIsFocused(false)
-    }, [setIsFocused])
+
+        if (input.onBlur)
+            input.onBlur(e)
+    }, [ input.onBlur ])
 
     return (
-        <div className={className}>
-            <label htmlFor={(props.input && props.input.name) ? props.input.name : props.name}>{ props.label }</label>
-            <textarea { ...props.input } onFocus={handleFocus} onBlur={handleBlur}
-                ></textarea>
+        <div className={_classes}>
+            <label htmlFor={input && input.name ? input.name : props.name}>{ label }</label>
+            <textarea { ...input } onFocus={handleFocus} onBlur={handleBlur}></textarea>
+            {touched && error
+                && <div className="invalidFeedback"><Translator path={ error } /></div>}
         </div>
     )
 }

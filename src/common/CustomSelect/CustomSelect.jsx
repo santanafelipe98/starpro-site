@@ -1,17 +1,34 @@
-import React, { useCallback, useState } from 'react'
+import React, {
+    useCallback,
+    useState,
+    useMemo
+} from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
 import './CustomSelect.css'
+
+import { change } from 'redux-form'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import { useEffect } from 'react'
 import { useRef } from 'react'
+import Translator from '../I18n/Translator'
 
-const CustomSelect = props => {
+let CustomSelect = props => {
+    const {
+        meta: { touched, error, form },
+        className,
+        input, 
+        label,
+        change
+    } = props
+
     const [ currentIndex, setCurrentIndex ] = useState(0)
-    const [ value, setValue ] = useState('')
+    
     const [ open, setOpen ] = useState(false)
-    const ref = useRef(null)
+    const ref               = useRef(null)
 
     useEffect(() => {
         const handler = e => {
@@ -29,10 +46,18 @@ const CustomSelect = props => {
     }, [ref, setOpen])
 
     const options = props.options || []
+    const value   = useMemo(() => options[currentIndex] ? options[currentIndex].value || "" : "", [ currentIndex, options ])
 
     useEffect(() => {
-        setValue(options[currentIndex].value || '')
-    }, [setValue, currentIndex, options])
+        if (change)
+            change(form, input.name, value)
+    }, [ value, change, input, form ])
+
+    const _classes = useMemo(() => {
+        let classes = `${props.className || ''} CustomSelect ${touched && error ? 'isInvalid' : ''}`
+        
+        return classes
+    }, [ className, error, touched ])
 
     const renderItem = useCallback((o, i) => {
         if (currentIndex === i)
@@ -51,15 +76,15 @@ const CustomSelect = props => {
     ), [currentIndex])
 
     const handleChange = useCallback(e => {
-        let newValue = e.target.value
-        setValue(newValue)
-        if (props.change)
-            props.change(props.input.name, newValue)
-    }, [props.change, props.input, setValue])
+        if (input.onChange)
+            input.onChange(e)
+
+            
+    }, [props.change, input ])
 
     return (
-        <div ref={ref} className="CustomSelect">
-            { props.label && <label htmlFor={props.name}>{props.label}</label>}
+        <div ref={ref} className={ _classes }>
+            { props.label && <label htmlFor={props.name}>{label}</label>}
             <div className="select" onClick={() => setOpen(val => !val)}>
                 <span className="current">{ options[currentIndex].title || '' }</span>
                 <FontAwesomeIcon
@@ -72,11 +97,15 @@ const CustomSelect = props => {
                 </ul>
             </div>
             <select
-                value={value}
+                { ...input }
                 onChange={handleChange}
-                className="hidden">
+                value={value}
+                className="hidden"
+                >
                 { options.map(renderOption) }
             </select>
+            {touched && error
+                && <div className="invalidFeedback"><Translator path={ error } /></div>}
         </div>
     )
 }
@@ -88,4 +117,8 @@ CustomSelect.propTypes = {
     }))
 }
 
-export default CustomSelect
+const mapDispatchToProps = dispatch => bindActionCreators({
+    change
+}, dispatch)
+
+export default connect(null, mapDispatchToProps)(CustomSelect)

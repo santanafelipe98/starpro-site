@@ -1,26 +1,48 @@
 import axios from 'axios'
+import { reset } from 'redux-form'
 import { ACTION_CONTACT_SENT_MESSAGE_STATUS } from './contactActionTypes'
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://mailer.starproambiental.com.br'
 
-export function sendMessage({ name, email, phone, service, message }) {
+export function sendMessage(data) {
     return dispatch => {
         dispatch({ type: ACTION_CONTACT_SENT_MESSAGE_STATUS, payload: { status: 'SENDING' } })
 
         axios.post(
-            `${BASE_URL}/api/mailer`,
-            { name, email, phone, service, message }
+            `${BASE_URL}/`,
+            data,
+            {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            }
         ).then(
-            resp => {
-                console.log(resp.data)
+            () => {
                 dispatch({ type: ACTION_CONTACT_SENT_MESSAGE_STATUS, payload: { status: 'DONE' } })
             }
-        ).catch(error => dispatch({
-            type: ACTION_CONTACT_SENT_MESSAGE_STATUS,
-            payload: {
-                status: 'ERROR',
-                errors: error.response.data ? error.response.errors : [ 'Erro' ]
+        ).catch(error => {
+            if (error.response) {
+                if (error.response.status === 200) {
+                    dispatch({ type: ACTION_CONTACT_SENT_MESSAGE_STATUS, payload: { status: 'DONE' } })
+                } else {
+                    dispatch({
+                        type: ACTION_CONTACT_SENT_MESSAGE_STATUS,
+                        payload: {
+                            status: 'ERROR',
+                            errors: error.response.data ? error.response.errors : [ 'Erro' ]
+                        }
+                    })
+                }
+            } else {
+                dispatch({
+                    type: ACTION_CONTACT_SENT_MESSAGE_STATUS,
+                    payload: {
+                        status: 'ERROR',
+                        errors: [ "Erro de conexão" ]
+                    }
+                })
             }
-        }))
-    }    
+            
+        }).finally(() => dispatch(reset('contact')))
+    }
 }

@@ -198,7 +198,13 @@ export default {
             select_quote_label: "Request quote",
             select_quote_default_option: "Choose a service",
             textarea_type_your_text_here: "Type your message here",
-            button: "Send"
+            button: "Send",
+        },
+        form_validations: {
+            required: "Required*",
+            email_invalid: "Invalid e-mail.",
+            phone_invalid: "Invalid phone number.",
+            service_invalid: "Invalid service type."
         }
     }
 }
