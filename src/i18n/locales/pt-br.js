@@ -197,6 +197,8 @@ export default {
             select_quote_label: "Solicite orçamento",
             select_quote_default_option: "Selecione o serviço",
             textarea_type_your_text_here: "Digite sua mensagem aqui",
+            message_sent: "Mensagem enviada. Em breve entraremos em contato.",
+            message_failed: "Falha ao enviar mensagem.",
             button: "Enviar"
         },
         form_validations: {

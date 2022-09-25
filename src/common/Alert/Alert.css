@@ -1,0 +1,47 @@
+.Alert {
+    padding: 10px 20px;
+    color: #666;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.alertIcon {
+    padding: 0 20px;
+}
+
+.alertBody {
+    flex: 1;
+}
+
+.Alert .alertButton {
+    margin-left: 10px;
+}
+
+.Alert .closeButton button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.alertDanger {
+    background: #ffdddd;
+    border-bottom: 5px solid var(--danger-color);
+}
+
+.alertWarning {
+    background: #ffffcc;
+    border-bottom: 5px solid var(--warning-color);
+}
+
+.alertSuccess {
+    background: #ddffdd;
+    border-bottom: 5px solid var(--warning-color);
+}
+
+.alertInfo {
+    background: #ddffff;
+    border-bottom: 5px solid var(--info-color);
+}

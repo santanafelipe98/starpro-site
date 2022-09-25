@@ -18,18 +18,20 @@ export function sendMessage(data) {
             }
         ).then(
             () => {
-                dispatch({ type: ACTION_CONTACT_SENT_MESSAGE_STATUS, payload: { status: 'DONE' } })
+                dispatch({ type: ACTION_CONTACT_SENT_MESSAGE_STATUS, payload: { status: 'DONE', errors: [] } })
+                dispatch(reset('contact'))
             }
         ).catch(error => {
             if (error.response) {
-                if (error.response.status === 200) {
-                    dispatch({ type: ACTION_CONTACT_SENT_MESSAGE_STATUS, payload: { status: 'DONE' } })
+                if (error.response.status === 200 || error.response.status === 0) {
+                    dispatch({ type: ACTION_CONTACT_SENT_MESSAGE_STATUS, payload: { status: 'DONE', errors: [] } })
+                    dispatch(reset('contact'))
                 } else {
                     dispatch({
                         type: ACTION_CONTACT_SENT_MESSAGE_STATUS,
                         payload: {
                             status: 'ERROR',
-                            errors: error.response.data ? error.response.errors : [ 'Erro' ]
+                            errors: error.response.data ? error.response.errors : [ 'Falha ao enviar mensagem.' ]
                         }
                     })
                 }

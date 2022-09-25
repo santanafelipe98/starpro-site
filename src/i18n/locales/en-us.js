@@ -198,6 +198,8 @@ export default {
             select_quote_label: "Request quote",
             select_quote_default_option: "Choose a service",
             textarea_type_your_text_here: "Type your message here",
+            message_sent: "Your message was sent. Soon we will contact you.",
+            message_failed: "Failed to send message.",
             button: "Send",
         },
         form_validations: {

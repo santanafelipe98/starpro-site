@@ -197,6 +197,8 @@ export default {
             select_quote_label: "Solicitud de cotización",
             select_quote_default_option: "Seleccione el servicio",
             textarea_type_your_text_here: "Escribe tu mensaje aquí",
+            message_sent: "Tu mensaje fue enviado. Pronto nos pondremos en contacto con usted.",
+            message_failed: "No se pudo enviar el mensaje.",
             button: "Enviar"
         },
         form_validations: {
