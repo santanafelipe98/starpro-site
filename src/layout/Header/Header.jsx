@@ -81,7 +81,7 @@ const Header = props => {
                 },
                 {
                     title: <Translator path="services.plant_sanitation_card_title" />,
-                    url: 'servicos/saneamento-vegetal'
+                    url: 'servicos/paisagismo'
                 }
             ]
         },

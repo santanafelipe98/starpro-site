@@ -3,7 +3,7 @@ export default {
         home: {
             jumbotron_heading: "A StarPro é especialista em",
             jumbotron_subtitle: "Controle de Pragas Urbanas",
-            jumbotron_text: "Uma empresa líder de mercado, especializada na prestação de serviços em Controle de Pragas Urbana, Higienização de Caixa D'água, Sanitização de Ambientes e Saneamento Vegetal.",
+            jumbotron_text: "Uma empresa líder de mercado, especializada na prestação de serviços em Controle de Pragas Urbana, Higienização de Caixa D'água, Sanitização de Ambientes e Paisagismo.",
             floating_container_text_black: "A StarPro realiza o Tratamento Fitossanitário, Controle de Pragas, Sanitização de Ambientes, ",
             floating_container_text_green: "com excelência e profissionalismo.",
             first_card_title: "A StarPro está presente em toda a Bahia…",
@@ -33,8 +33,8 @@ export default {
             water_tank_cleaning_and_disinfection_card_text: "A higienização dos reservatórios de água potável, segundo a ANVISA, deve ser higienizada a cada 06 meses para evitar a proliferação de microrganismos que comprometem a potabilidade da água.",
             sanitization_of_environments_card_title: "Sanitização de Ambientes",
             sanitization_of_environments_card_text: "A partir do uso de técnicas especiais, com equipamentos e produtos selecionados e seguros, a StarPro combate vírus, fungos e bactérias nos mais diversos ambientes, tornando-os mais seguro para o seu uso. Sanitização? Chame a StarPro!",
-            plant_sanitation_card_title: "Saneamento Vegetal",
-            plant_sanitation_card_text: "A presença de vegetação em áreas urbanas necessita de manutenção periódica, evitando desconforto paisagístico, acúmulo de resíduos, abrigo para roedores e insetos nocivos para a saúde humana e animais domésticos."
+            plant_sanitation_card_title: "Paisagismo",
+            plant_sanitation_card_text: "A execução do seu projeto de paisagismo precisa ser realizada tendo como premissa que os cuidados com os jardins são importantes e necessários para a harmonia do ambiente urbano ou arquitetônico, assim evitando o abrigo para roedores e insetos nocivos para a saúde humana e animais domésticos."
         },
         about_starpro: {
             heading: "Quem somos",
@@ -119,7 +119,7 @@ export default {
             first_section_second_paragraph: "Para cada tipo de praga, um tratamento específico e eficaz realizado por um time de especialistas do segmento. Tenha controle de pragas a longo prazo com resultados reais.",
             first_section_third_paragraph: "Mosquitos, moscas, formigas, ratos, cupins e baratas, além de serem desagradáveis, podem transmitir inúmeras doenças com consequências desastrosas para o ser humano. E isso pode acontecer em qualquer tipo de ambiente, como sua casa ou local de trabalho.",
             second_section_title: "Como a StarPro controladora de pragas pode ajudar a manter seu ambiente mais seguro?",
-            second_section_first_paragraph: "Uma empresa líder de mercado, especializada na prestação de serviços em Controle de Pragas Urbanas, Higienização de Caixa D’água, Sanitização de Ambientes e Saneamento Vegetal.",
+            second_section_first_paragraph: "Uma empresa líder de mercado, especializada na prestação de serviços em Controle de Pragas Urbanas, Higienização de Caixa D’água, Sanitização de Ambientes e Paisagismo.",
             second_section_second_paragraph: "A StarPro é reconhecida no mercado pelo seu alto padrão de qualidade.",
             second_section_third_paragraph: "Ambientes urbanos são suscetíveis a proliferação de pragas, trazendo prejuízos econômicos e agravos à saúde humana. A StarPro utiliza as técnicas mais modernas com aplicações estratégicas garantindo um ambiente seguro e protegido.",
             banner_bottom_title: "Controle de Pragas Urbanas é com a StarPro",
@@ -163,11 +163,11 @@ export default {
             banner_bottom_subtitle: "Estamos prontos para lhe atender"
         },
         plant_sanitation: {
-            header_title: "Saneamento Vegetal",
-            header_text: "Especialista em eliminação da vegetação indesejada",
-            first_section_header_title: "Controle de pragas através de técnicas eficientes e produtos de alta qualidade",
-            first_section_first_paragraph: "Eliminação da vegetação indesejada através de poda, capina mecanizada ou química com uso de herbicidas. Indicado para jardins, pátios, pavimentos diversos e qualquer ambiente onde exista necessidade.",
-            banner_bottom_title: "Saneamento Vegetal é com a StarPro",
+            header_title: "Paisagismo",
+            header_text: "Especialistas na execução e manutenção de projetos de Paisagismo!",
+            first_section_header_title: "Instalação e Manutenção de Jardins através de técnicas eficientes e produtos de alta qualidade",
+            first_section_first_paragraph: "Execução das manutenções necessárias em jardins, como: Poda técnica, Adubação, Realocação de plantas e Eliminação de vegetações indesejadas através do Saneamento Vegetal, Indicado para jardins, pátios, pavimentos diversos e qualquer ambiente onde exista necessidade. Também realizamos todo controle de pragas para manter a longevidade do seu paisagismo.",
+            banner_bottom_title: "Paisagismo é com a StarPro",
             banner_bottom_subtitle: "Estamos prontos para lhe atender"
         },
         mission_vision_values: {

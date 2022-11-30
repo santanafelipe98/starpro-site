@@ -31,7 +31,7 @@ const services = [
     },
     {
         _id: 'saneamento_vegetal',
-        buttonLink: 'servicos/saneamento-vegetal',
+        buttonLink: 'servicos/paisagismo',
         iconURL: `${process.env.PUBLIC_URL}/images/cortador-de-grama.png`,
         title: <Translator path="services.plant_sanitation_card_title" />,
         text: <Translator path="services.plant_sanitation_card_text" />

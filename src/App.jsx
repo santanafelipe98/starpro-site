@@ -28,7 +28,7 @@ function App() {
               <Route path="tratamento-fitossanitario" element={ <PhytossanitaryTreatment /> } />
               <Route path="controle-de-pragas-urbanas" element={ <UrbanPestControl /> }/>
               <Route path="sanitizacao-de-ambientes" element={<SanitizationOfEnviroments />} />
-              <Route path="saneamento-vegetal" element={ <PlantSanitation /> } />
+              <Route path="paisagismo" element={ <PlantSanitation /> } />
               <Route path="limpeza-e-desinfeccao-de-caixa-dagua" element={ <WaterTankCleaning /> } />
             </Route>
             <Route path="*" element={<PageNotFound />} />
