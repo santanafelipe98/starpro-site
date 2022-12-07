@@ -44,11 +44,11 @@ const PlantSanitation = props => (
                                     alt: 'Slide 01'
                                 },
                                 {
-                                    src: `${process.env.PUBLIC_URL}/images/34.jpeg`,
+                                    src: `${process.env.PUBLIC_URL}/images/34.jpg`,
                                     alt: 'Slide 02'
                                 },
                                 {
-                                    src: `${process.env.PUBLIC_URL}/images/cortando_grama_close.jpg`,
+                                    src: `${process.env.PUBLIC_URL}/images/35.jpg`,
                                     alt: 'Slide 04'
                                 },
                                 {

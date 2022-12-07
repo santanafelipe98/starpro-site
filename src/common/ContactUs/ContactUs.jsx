@@ -23,7 +23,7 @@ const ContactUs = props => {
             return null
         } else {
             return {
-                backgroundImage: `linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%), url(${process.env.PUBLIC_URL}/images/detetizador_sorrindo.jpg)`,
+                backgroundImage: `linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%), url(${process.env.PUBLIC_URL}/images/formulario.jpg)`,
                 backgroundRepeat: 'no-repeat'
             }
         }
