@@ -53,10 +53,10 @@ const Footer = props => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12 col-md-7 d-flex row justify-content-end contact">
+                    <div className="col-sm-12 col-md-8 d-flex row justify-content-end contact">
                         <ContactInfo />
                     </div>
-                    <div className="col-sm-12 col-md-5 d-flex row justify-content-end social">
+                    <div className="col-sm-12 col-md-4 d-flex row justify-content-end social">
                         <SocialMedia
                             items={socials} />
                     </div>

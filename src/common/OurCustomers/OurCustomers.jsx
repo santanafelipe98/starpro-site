@@ -19,10 +19,6 @@ const customers = [
         title: 'Câmara Municipal de Camaçari'
     },
     {
-        img: `${process.env.PUBLIC_URL}/images/cliente-03-300x300.jpeg`,
-        title: 'Escola Concept'
-    },
-    {
         img: `${process.env.PUBLIC_URL}/images/cliente-04-300x300.jpeg`,
         title: 'Mundo Plaza'
     },
@@ -52,12 +48,6 @@ const customers = [
         title: 'Logic'
     },
     {
-        img: `${process.env.PUBLIC_URL}/images/cliente-11-300x300.jpeg`,
-        title: 'Clube Espanhol'
-    },
-
-
-    {
         img: `${process.env.PUBLIC_URL}/images/cliente-12-300x300.jpeg`,
         title: 'Faculdade Dom Pedro II'
     },
@@ -66,10 +56,61 @@ const customers = [
         title: 'EVO'
     },
     {
-        img: `${process.env.PUBLIC_URL}/images/cliente-15-300x300.jpeg`,
-        title: 'Mar Azul Hotel'
+        img: `${process.env.PUBLIC_URL}/images/colegio-portinari.jpg`,
+        title: 'Colégio Portinari'
     },
-
+    {
+        img: `${process.env.PUBLIC_URL}/images/oliva-gourmet.jpg`,
+        title: 'Oliva Gourmet'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/continental.jpg`,
+        title: 'Continental'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/tenda.jpg`,
+        title: 'Tenda'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/boulevard-side.jpg`,
+        title: 'Boulevard Side Empresarial'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/capelinha.jpg`,
+        title: 'Capelinha'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/hotel-dan-inn.jpg`,
+        title: 'Hotel Dan Inn'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/dom-pedrinho.jpg`,
+        title: 'Dom Pedrinho'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/auto-norte.jpg`,
+        title: 'Auto Norte Distribuidora de Peças'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/azul-cargo.jpg`,
+        title: 'Azul Cargo'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/hotel-salvador-mar.jpg`,
+        title: 'Salvador Mar Hotel'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/colegio-guadalupe.jpg`,
+        title: 'Colégio Guadalupe'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/edf-fundacao-politecnica.jpg`,
+        title: 'Condomínio Edf. Fundação Politécnica'
+    },
+    {
+        img: `${process.env.PUBLIC_URL}/images/centerparts-distribuidora.jpg`,
+        title: 'Centerparts Distribuidora'
+    },
 ]
 
 const OurCustomers = props => {
