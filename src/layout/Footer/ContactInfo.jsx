@@ -8,7 +8,7 @@ const ContactInfo = props => (
         <ul>
             <li>
                 <FontAwesomeIcon icon="phone" size="lg" color="var(--primary-color)" />
-                <span className="info"><a href="tel:+557135081814">71 3508-1814</a></span>
+                <span className="info"><a href="tel:+557135081814">71 3508-1814</a> / <a href="tel:+5571983531931">71 98353-1931</a></span>
             </li>
             <li>
                 <FontAwesomeIcon icon={['far', 'envelope']} size="lg" color="var(--primary-color)" />
